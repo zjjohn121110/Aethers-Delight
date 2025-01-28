@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "pool1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "aethersdelight:roast_moa_block"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "aethersdelight:roast_moa_block",
+          "properties": {
+            "servings": "6",
+            "part": "head"
+
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool2",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:block_state_property",
+            "block": "aethersdelight:roast_moa_block",
+            "properties": {
+              "servings": "6"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool3",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bowl"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:block_state_property",
+            "block": "aethersdelight:roast_moa_block",
+            "properties": {
+              "servings": "6"
+            }
+          }
+        },
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "aethersdelight:roast_moa_block",
+          "properties": {
+            "part": "head"
+          }
+        }
+      ]
+    }
+  ]
+}

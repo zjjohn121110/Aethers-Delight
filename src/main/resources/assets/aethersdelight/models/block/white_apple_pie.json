@@ -1,0 +1,9 @@
+{
+  "parent": "farmersdelight:block/pie",
+  "textures": {
+    "particle": "aethersdelight:block/white_apple_pie_top",
+    "bottom": "aethersdelight:block/aether_pie_bottom",
+    "side": "aethersdelight:block/aether_pie_side",
+    "top": "aethersdelight:block/white_apple_pie_top"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:wooden_axe",
+    "minecraft:stone_axe",
+    "minecraft:iron_axe",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_axe",
+    "aether:skyroot_axe",
+    "aether:holystone_axe"
+  ]
+}

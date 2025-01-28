@@ -1,0 +1,10 @@
+{
+  "type": "aether:enchanting",
+  "category": "enchanting_misc",
+  "cookingtime": 125,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "aether_redux:golden_swet_ball"
+  },
+  "result": "minecraft:sugar"
+}

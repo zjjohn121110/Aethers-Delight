@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "aethersdelight:block/arkenium_blast_furnace_top",
+    "front": "aethersdelight:block/arkenium_blast_furnace_front_on",
+    "side": "aethersdelight:block/arkenium_blast_furnace_side"
+  }
+}

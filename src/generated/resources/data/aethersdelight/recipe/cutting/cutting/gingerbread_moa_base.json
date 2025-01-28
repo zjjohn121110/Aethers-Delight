@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "aethersdelight:gingerbread_dough"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "aethersdelight:gingerbread_moa_base"
+      }
+    }
+  ],
+  "tool": {
+    "item": "aethersdelight:cookie_cutter_moa"
+  }
+}

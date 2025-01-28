@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "B": {
+      "item": "aether:holystone_bricks"
+    },
+    "C": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B",
+    "BCB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:holystone_stove"
+  }
+}

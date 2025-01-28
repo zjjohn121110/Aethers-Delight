@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "side": "aethersdelight:block/holystone_stove_side",
+    "front": "aethersdelight:block/holystone_stove_front_on",
+    "bottom": "aethersdelight:block/holystone_stove_bottom",
+    "top": "aethersdelight:block/holystone_stove_top_on"
+  }
+}

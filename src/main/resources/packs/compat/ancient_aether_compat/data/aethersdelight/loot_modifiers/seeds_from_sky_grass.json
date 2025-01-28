@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.125
+    },
+    {
+      "condition": "block_state_property",
+      "block": "ancient_aether:sky_grass"
+    }
+  ],
+  "item": "minecraft:wheat_seeds"
+}

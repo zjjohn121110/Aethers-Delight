@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "aethersdelight:ginger"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:ginger_crate"
+  }
+}

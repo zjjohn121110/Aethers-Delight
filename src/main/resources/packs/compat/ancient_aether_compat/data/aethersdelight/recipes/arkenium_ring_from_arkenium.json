@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "B": {
+      "item": "aethersdelight:arkenium_block"
+    }
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " A "
+  ],
+  "result": {
+    "item": "ancient_aether:arkenium_ring"
+  },
+  "show_notification": true
+}

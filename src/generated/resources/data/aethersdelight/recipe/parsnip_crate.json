@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "aethersdelight:parsnip"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:parsnip_crate"
+  }
+}

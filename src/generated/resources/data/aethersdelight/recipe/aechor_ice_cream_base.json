@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aether:aechor_petal"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "item": "aether:skyroot_bucket"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:aechor_ice_cream_base"
+  }
+}

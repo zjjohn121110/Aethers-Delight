@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gingerbread_moa_base": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aethersdelight:gingerbread_moa_base"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aethersdelight:gingerbread_moa_from_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gingerbread_moa_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aethersdelight:gingerbread_moa_from_smelting"
+    ]
+  }
+}

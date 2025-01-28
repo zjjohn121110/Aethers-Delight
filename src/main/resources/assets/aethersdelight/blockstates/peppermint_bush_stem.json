@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "double_drops=false": {
+      "model": "aethersdelight:block/peppermint_bush_stem"
+    },
+    "double_drops=true": {
+      "model": "aethersdelight:block/peppermint_bush_stem"
+    }
+  }
+}

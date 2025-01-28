@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    "A A",
+    "ACA",
+    " A "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:hopper"
+  }
+}

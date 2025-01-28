@@ -1,0 +1,13 @@
+{
+  "type": "aether:enchanting",
+  "category": "enchanting_misc",
+  "cookingtime": 150,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "aethersdelight:blue_berry_muffin"
+  },
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:enchanted_berry_muffin"
+  }
+}

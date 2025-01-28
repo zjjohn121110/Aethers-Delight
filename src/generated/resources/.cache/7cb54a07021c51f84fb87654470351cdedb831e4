@@ -1,0 +1,19 @@
+// 1.21.1	2025-01-28T16:25:23.4566665	Tags for minecraft:item mod id aethersdelight
+465cdb990ab342cb97554e980a0558c26a7fb539 data/aethersdelight/tags/item/bucket.json
+7e75a073a8949456a5224cd7f4b4940e05c08e64 data/aethersdelight/tags/item/golden_amber_harvestable.json
+0ba047ad4e7076bf071a06cca3b29b9010f1ef37 data/aethersdelight/tags/item/not_golden_amber_harvestable.json
+5bd00713d8f3a2de591b58fd2d5e7996e93c7f52 data/aethersdelight/tags/item/stick.json
+6ed3de893a2fa013643a5319b63fc32217f52ad0 data/aether/tags/item/treated_as_aether_item.json
+0650469cd2041ff72089c99c230c98a19f7bfebf data/c/tags/item/cooked_moa.json
+994e30cece3dbf60240d6b0e7f4c9040ea22eec3 data/c/tags/item/crops/ginger.json
+6788db6f902f62d97c780e8a981cf09086877935 data/c/tags/item/crops/leek.json
+0cdf321a68f9e732d9deebb20aa35022046feea3 data/c/tags/item/crops/parsnip.json
+7305f7745e9b208e709d3dddc076c5303d49026b data/c/tags/item/foods/milk.json
+6deb5ad5ced9835f76eca6ff22f1454d051fc5cd data/c/tags/item/foods/vegetable.json
+b8124817be3d54e6b3cb4b1c12079f5fdb5f3d2c data/c/tags/item/raw_moa.json
+7d3378c9b8b320157744b6f3b4cafec064eade72 data/c/tags/item/tools/knife.json
+6deb5ad5ced9835f76eca6ff22f1454d051fc5cd data/c/tags/item/vegetables/aether.json
+994e30cece3dbf60240d6b0e7f4c9040ea22eec3 data/c/tags/item/vegetables/ginger.json
+6788db6f902f62d97c780e8a981cf09086877935 data/c/tags/item/vegetables/leek.json
+0cdf321a68f9e732d9deebb20aa35022046feea3 data/c/tags/item/vegetables/parsnip.json
+7d3378c9b8b320157744b6f3b4cafec064eade72 data/farmersdelight/tags/item/tools/knives.json

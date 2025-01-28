@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "aether:skyroot_slab"
+    },
+    "T": {
+      "item": "aether:skyroot_trapdoor"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "T T",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:skyroot_cabinet"
+  }
+}

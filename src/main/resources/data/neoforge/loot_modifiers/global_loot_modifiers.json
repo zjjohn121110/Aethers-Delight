@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "entries": [
+    "aethersdelight:cooked_moa_from_moa",
+    "aethersdelight:raw_moa_from_moa",
+    "aethersdelight:scavenging_cooked_wings_from_flying_cow",
+    "aethersdelight:scavenging_cooked_wings_from_phyg",
+    "aethersdelight:scavenging_wings_from_flying_cow",
+    "aethersdelight:scavenging_wings_from_phyg",
+    "aethersdelight:scavenging_ham_from_phyg",
+    "aethersdelight:scavenging_smoked_ham_from_phyg",
+    "aethersdelight:sugar_from_blue_swet_ad",
+    "aethersdelight:sugar_from_golden_swet_ad"
+  ]
+}

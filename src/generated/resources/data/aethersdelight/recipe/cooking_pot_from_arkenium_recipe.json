@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "aether:skyroot_shovel"
+    },
+    "W": {
+      "tag": "aethersdelight:bucket"
+    },
+    "b": {
+      "item": "aether:skyroot_stick"
+    },
+    "i": {
+      "item": "aethersdelight:arkenium_ingot"
+    }
+  },
+  "pattern": [
+    "bSb",
+    "iWi",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:cooking_pot"
+  }
+}

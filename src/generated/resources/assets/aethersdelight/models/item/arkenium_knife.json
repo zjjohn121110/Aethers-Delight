@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "aethersdelight:item/arkenium_knife"
+  }
+}

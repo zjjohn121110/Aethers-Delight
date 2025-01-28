@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "description": "Adds compatibility with Aether: Redux",
+    "pack_format": 15
+  }
+}

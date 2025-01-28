@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "aethersdelight:raw_moa_cuts"
+  },
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:cooked_moa_cuts"
+  }
+}

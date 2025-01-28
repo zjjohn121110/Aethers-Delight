@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "aethersdelight:arkenium_block"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    " A "
+  ],
+  "result": {
+    "item": "ancient_aether:arkenium_pendant"
+  },
+  "show_notification": true
+}

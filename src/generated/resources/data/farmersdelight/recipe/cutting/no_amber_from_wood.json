@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "aether:golden_oak_wood"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "aether:stripped_skyroot_wood"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "farmersdelight:tree_bark"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "aethersdelight:not_golden_amber_harvestable"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "values": {
+    "aethersdelight:enchanted_berry_muffin": {
+      "chance": 1.0
+    },
+    "aethersdelight:white_apple_pie": {
+      "chance": 1.0
+    },
+    "aethersdelight:cooked_parsnip": {
+      "chance": 0.85
+    },
+    "aethersdelight:blue_berry_muffin": {
+      "chance": 0.85
+    },
+    "aethersdelight:gingerbread": {
+      "chance": 0.65
+    },
+    "aethersdelight:candied_white_apple": {
+      "chance": 0.65
+    },
+    "aethersdelight:white_apple_pie_slice": {
+      "chance": 0.5
+    },
+    "aethersdelight:ginger": {
+      "chance": 0.5
+    },
+    "aethersdelight:parsnip": {
+      "chance": 0.5
+    },
+    "aethersdelight:leek": {
+      "chance": 0.5
+    },
+    "aethersdelight:gingerbread_moa": {
+      "chance": 0.3
+    },
+    "aethersdelight:gingerbread_star": {
+      "chance": 0.3
+    },
+    "aether:gingerbread_man": {
+      "chance": 0.3
+    },
+    "aethersdelight:peppermint_leaf": {
+      "chance": 0.3
+    },
+    "aether:aechor_petal": {
+      "chance": 0.3
+    },
+    "aethersdelight:ginger_spice": {
+      "chance": 0.15
+    }
+  }
+}

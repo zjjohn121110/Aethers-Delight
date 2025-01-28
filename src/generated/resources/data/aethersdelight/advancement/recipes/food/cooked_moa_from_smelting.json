@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_moa": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aethersdelight:raw_moa"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aethersdelight:cooked_moa_from_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_moa"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aethersdelight:cooked_moa_from_smelting"
+    ]
+  }
+}

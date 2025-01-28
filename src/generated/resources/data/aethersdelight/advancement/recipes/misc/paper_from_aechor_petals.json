@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aechor_petal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aether:aechor_petal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aethersdelight:paper_from_aechor_petals"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aechor_petal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aethersdelight:paper_from_aechor_petals"
+    ]
+  }
+}

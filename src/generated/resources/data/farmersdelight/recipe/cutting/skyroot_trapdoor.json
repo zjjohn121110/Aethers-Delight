@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "aether:skyroot_trapdoor"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "aether:skyroot_planks"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "minecraft:axes"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_arkenium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aethersdelight:raw_arkenium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aethersdelight:arkenium_from_blasting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_arkenium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aethersdelight:arkenium_from_blasting"
+    ]
+  }
+}

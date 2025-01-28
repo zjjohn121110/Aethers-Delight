@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "aethersdelight:cooked_moa"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "aethersdelight:cooked_moa_cuts"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:bone"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

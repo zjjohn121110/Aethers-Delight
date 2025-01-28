@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "aethersdelight:arkenium_nugget"
+    }
+  },
+  "pattern": [
+    "NNN",
+    " N ",
+    "N N"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:cookie_cutter_man"
+  }
+}

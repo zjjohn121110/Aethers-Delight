@@ -1,0 +1,68 @@
+{
+  "values": [
+    "aether:skyroot_meadow",
+    "aether:skyroot_woodland",
+    "aether:skyroot_grove",
+    "aether:skyroot_forest",
+    {
+      "id": "ancient_aether:sun_forest",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:wyndcap_taiga",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:festive_wyndcap_taiga",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:wyndcap_highland",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:elevated_forest",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:elevated_clearing",
+      "required": false
+    },
+    {
+      "id": "aether_redux:frosted_forest",
+      "required": false
+    },
+    {
+      "id": "aether_redux:glacial_tundra",
+      "required": false
+    },
+    {
+      "id": "aether_redux:skyroot_shrublands",
+      "required": false
+    },
+    {
+      "id": "deep_aether:blue_aerglow_forest",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:crystal_skyroot_forest",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:crystal_skyroot_grove",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:golden_skyroot_forest",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:golden_skyroot_grove",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:golden_thicket",
+      "required": false
+    }
+  ]
+}

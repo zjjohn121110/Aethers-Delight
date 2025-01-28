@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_quicksoil_glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aether:quicksoil_glass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aethersdelight:glass_bottles_from_quicksoil_glass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_quicksoil_glass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aethersdelight:glass_bottles_from_quicksoil_glass"
+    ]
+  }
+}

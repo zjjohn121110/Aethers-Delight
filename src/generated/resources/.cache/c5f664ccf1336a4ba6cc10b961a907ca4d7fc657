@@ -1,0 +1,8 @@
+// 1.21.1	2025-01-28T16:25:23.4646654	Tags for minecraft:block mod id aethersdelight
+db1465c30a23091baea7bd106daeb1d026585889 data/create/tags/block/passive_boiler_heaters.json
+0e59047c016607eaf54a3642b663ded35f1e5e7d data/farmersdelight/tags/block/heat_sources.json
+66acd7e682bf2183985e9059fff975d2327ded3c data/farmersdelight/tags/block/mineable/knife.json
+ef72ae3a791cae2439d57b4425c111b6810fbbe7 data/minecraft/tags/block/mineable/axe.json
+dd66a87149be7ea89623170258283010830c3266 data/minecraft/tags/block/mineable/pickaxe.json
+9e4fd878dd34fcbb7a8f14423f9a7aadf859584f data/minecraft/tags/block/needs_iron_tool.json
+a436b5af31c415dd4c59ac5f27b1c7a6d6eadf0b data/minecraft/tags/block/needs_stone_tool.json

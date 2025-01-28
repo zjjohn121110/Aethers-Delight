@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "aether:swet_ball"
+    },
+    {
+      "item": "aether:blue_berry"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:swet_soup"
+  }
+}

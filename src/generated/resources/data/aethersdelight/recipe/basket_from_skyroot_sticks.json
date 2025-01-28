@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "farmersdelight:canvas"
+    },
+    "S": {
+      "item": "aether:skyroot_stick"
+    }
+  },
+  "pattern": [
+    "S S",
+    "# #",
+    "S#S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:basket"
+  }
+}

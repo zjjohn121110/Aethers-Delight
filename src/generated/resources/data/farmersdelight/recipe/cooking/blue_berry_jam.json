@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "aether:blue_berry"
+    },
+    {
+      "item": "aether:blue_berry"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:blue_berry_jam"
+  }
+}

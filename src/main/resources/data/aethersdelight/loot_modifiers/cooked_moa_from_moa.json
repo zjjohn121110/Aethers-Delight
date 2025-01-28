@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "attacker"
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "flags": {
+          "is_on_fire": true
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "aether:moa"
+      }
+    }
+  ],
+  "item": "aethersdelight:cooked_moa"
+}

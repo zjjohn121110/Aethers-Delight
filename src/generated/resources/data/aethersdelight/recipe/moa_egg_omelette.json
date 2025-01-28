@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aethersdelight:fried_moa_egg"
+    },
+    {
+      "item": "aethersdelight:leek"
+    },
+    {
+      "tag": "c:vegetables/aether"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:moa_egg_omelette"
+  }
+}

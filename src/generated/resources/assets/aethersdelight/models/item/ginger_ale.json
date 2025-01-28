@@ -1,0 +1,6 @@
+{
+  "parent": "aethersdelight:item/mug",
+  "textures": {
+    "layer0": "aethersdelight:item/ginger_ale"
+  }
+}

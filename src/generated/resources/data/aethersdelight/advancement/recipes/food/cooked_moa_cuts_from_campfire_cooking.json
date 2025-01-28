@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_moa_cuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aethersdelight:raw_moa_cuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aethersdelight:cooked_moa_cuts_from_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_moa_cuts"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aethersdelight:cooked_moa_cuts_from_campfire_cooking"
+    ]
+  }
+}

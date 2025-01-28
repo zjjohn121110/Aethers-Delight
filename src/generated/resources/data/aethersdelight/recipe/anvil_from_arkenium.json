@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "B": {
+      "item": "aethersdelight:arkenium_block"
+    }
+  },
+  "pattern": [
+    "BBB",
+    " A ",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:anvil"
+  }
+}

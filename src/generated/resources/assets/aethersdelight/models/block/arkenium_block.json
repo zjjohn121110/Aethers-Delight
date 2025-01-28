@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "aethersdelight:block/arkenium_block"
+  }
+}

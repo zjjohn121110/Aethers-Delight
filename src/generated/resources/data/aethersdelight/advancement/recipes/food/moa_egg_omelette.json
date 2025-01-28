@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_moa_egg": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#aether:moa_eggs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aethersdelight:moa_egg_omelette"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_moa_egg"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aethersdelight:moa_egg_omelette"
+    ]
+  }
+}

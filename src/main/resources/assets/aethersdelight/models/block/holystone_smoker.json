@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "aethersdelight:block/holystone_smoker_top",
+    "bottom": "aethersdelight:block/holystone_smoker_bottom",
+    "front": "aethersdelight:block/holystone_smoker_front",
+    "side": "aethersdelight:block/holystone_smoker_side"
+  }
+}

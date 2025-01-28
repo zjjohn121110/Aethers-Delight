@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ancient_aether:wyndcap_peaks",
+  "features": "aethersdelight:wynd_arkenium_ore_placed",
+  "step": "underground_ores"
+}

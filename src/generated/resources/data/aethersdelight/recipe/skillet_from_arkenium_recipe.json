@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "/": {
+      "item": "aether:skyroot_stick"
+    }
+  },
+  "pattern": [
+    " ##",
+    " ##",
+    "/  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:skillet"
+  }
+}

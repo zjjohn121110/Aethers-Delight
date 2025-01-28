@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "c:raw_moa"
+    },
+    {
+      "item": "aethersdelight:parsnip"
+    },
+    {
+      "item": "aethersdelight:peppermint_leaf"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:moa_stew"
+  }
+}

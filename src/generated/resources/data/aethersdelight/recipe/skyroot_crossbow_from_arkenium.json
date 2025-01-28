@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "A": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "H": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "S": {
+      "item": "aether:skyroot_stick"
+    }
+  },
+  "pattern": [
+    "#A#",
+    "SHS",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:crossbow"
+  }
+}

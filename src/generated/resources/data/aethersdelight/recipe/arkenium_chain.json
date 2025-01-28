@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "N": {
+      "item": "aethersdelight:arkenium_nugget"
+    }
+  },
+  "pattern": [
+    " N ",
+    " A ",
+    " N "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:arkenium_chain"
+  }
+}

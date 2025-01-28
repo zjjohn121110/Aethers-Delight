@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "aethersdelight:raw_moa_cuts"
+  },
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:cooked_moa_cuts"
+  }
+}

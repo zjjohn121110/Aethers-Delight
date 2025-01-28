@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "aethersdelight:ginger"
+    },
+    {
+      "item": "aethersdelight:wing"
+    },
+    {
+      "item": "aethersdelight:wing"
+    },
+    {
+      "item": "minecraft:beef"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:flying_beef_stew"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "aether:skyroot_stick"
+    },
+    "W": {
+      "tag": "aether:planks_crafting"
+    }
+  },
+  "pattern": [
+    "WSW",
+    " W "
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:bowl"
+  }
+}

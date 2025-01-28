@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aethersdelight:peppermint_candy_dough"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "aethersdelight:peppermint_candy"
+  }
+}

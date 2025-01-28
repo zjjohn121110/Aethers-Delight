@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "aethersdelight:block/roast_moa_tray_leftover",
+		"particle": "aethersdelight:block/roast_moa_tray_leftover"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 2, 16],
+			"faces": {
+				"north": {"uv": [8, 1, 16, 0], "texture": "#1"},
+				"east": {"uv": [9, 8, 8, 16], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [8, 15, 16, 16], "texture": "#1"},
+				"west": {"uv": [16, 8, 15, 16], "rotation": 270, "texture": "#1"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#1"},
+				"down": {"uv": [8, 16, 16, 8], "texture": "#1"}
+			}
+		}
+	]
+}

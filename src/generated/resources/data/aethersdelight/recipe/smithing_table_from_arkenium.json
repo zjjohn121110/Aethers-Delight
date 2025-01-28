@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "aethersdelight:arkenium_ingot"
+    },
+    "S": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "II",
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:smithing_table"
+  }
+}

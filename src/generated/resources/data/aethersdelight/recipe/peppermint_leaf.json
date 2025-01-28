@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aethersdelight:peppermint_leaf_bag"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "aethersdelight:peppermint_leaf"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_any_ingredient": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aether:enchanted_berry"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/enchanted_berry_jam"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_any_ingredient"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/enchanted_berry_jam"
+    ]
+  }
+}

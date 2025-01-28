@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "aethersdelight:holystone_furnace"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "pattern": [
+    " L ",
+    "LFL",
+    " L "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:holystone_smoker"
+  }
+}

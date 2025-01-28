@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aethersdelight:cooked_parsnip"
+    },
+    {
+      "item": "aethersdelight:peppermint_leaf"
+    },
+    {
+      "item": "aethersdelight:leek"
+    },
+    {
+      "item": "aethersdelight:cooked_parsnip"
+    },
+    {
+      "item": "aethersdelight:cooked_moa"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "aether:blue_berry"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "aether:blue_berry"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:roast_moa_block"
+  }
+}

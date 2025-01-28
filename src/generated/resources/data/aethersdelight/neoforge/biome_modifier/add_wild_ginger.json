@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#aethersdelight:wild_ginger_biomes",
+  "features": "aethersdelight:wild_ginger_placed",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#aethersdelight:wild_parsnip_biomes",
+  "features": "aethersdelight:wild_parsnip_placed",
+  "step": "vegetal_decoration"
+}

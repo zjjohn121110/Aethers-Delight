@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "aethersdelight:parsnip"
+    },
+    {
+      "item": "aethersdelight:ginger_spice"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:cooked_parsnip"
+  }
+}

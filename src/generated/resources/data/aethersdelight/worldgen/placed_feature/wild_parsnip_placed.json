@@ -1,0 +1,22 @@
+{
+  "feature": "aethersdelight:wild_parsnip",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 48
+    },
+    {
+      "type": "aether:improved_layer_placement",
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 1,
+        "min_inclusive": 0
+      },
+      "heightmap": "MOTION_BLOCKING",
+      "verticalBounds": 4
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

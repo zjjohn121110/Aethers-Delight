@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "aethersdelight:ginger"
+    },
+    {
+      "item": "aethersdelight:ginger"
+    },
+    {
+      "item": "aethersdelight:parsnip"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:ginger_soup"
+  }
+}

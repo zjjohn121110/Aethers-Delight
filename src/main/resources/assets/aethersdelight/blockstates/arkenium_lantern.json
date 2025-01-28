@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "hanging=false,waterlogged=false": {
+      "model": "aethersdelight:block/arkenium_lantern"
+    },
+    "hanging=false,waterlogged=true": {
+      "model": "aethersdelight:block/arkenium_lantern"
+    },
+    "hanging=true,waterlogged=false": {
+      "model": "aethersdelight:block/hanging_arkenium_lantern"
+    },
+    "hanging=true,waterlogged=true": {
+      "model": "aethersdelight:block/hanging_arkenium_lantern"
+    }
+  }
+}
