@@ -1,4 +1,4 @@
-package net.zjjohn121110.aethersdelight.item.custom;
+package net.zjjohn121110.aethersdelight.item;
 
 import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherCreativeTabs;
@@ -10,7 +10,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.zjjohn121110.aethersdelight.AethersDelight;
 import net.zjjohn121110.aethersdelight.block.AethersDelightBlocks;
-import net.zjjohn121110.aethersdelight.item.AethersDelightItems;
 
 import static com.aetherteam.aether.item.AetherCreativeTabs.AETHER_INGREDIENTS;
 
