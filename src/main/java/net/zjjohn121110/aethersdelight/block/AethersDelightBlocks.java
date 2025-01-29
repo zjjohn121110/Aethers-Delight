@@ -13,7 +13,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.zjjohn121110.aethersdelight.AethersDelight;
 import net.zjjohn121110.aethersdelight.block.custom.*;
 import net.zjjohn121110.aethersdelight.item.AethersDelightItems;
-import vectorwing.farmersdelight.common.block.CabinetBlock;
 import vectorwing.farmersdelight.common.block.PieBlock;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 
