@@ -334,9 +334,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "crossbow_from_arkenium"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, Items.CROSSBOW)
-                .pattern("#A#")
-                .pattern("SHS")
-                .pattern(" # ")
+                .pattern("SAS")
+                .pattern("#H#")
+                .pattern(" S ")
                 .define('A', AethersDelightItems.ARKENIUM_INGOT.get())
                 .define('S', AetherItems.SKYROOT_STICK.get())
                 .define('#', Items.STRING)
