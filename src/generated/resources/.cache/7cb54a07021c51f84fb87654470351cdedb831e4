@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-22T18:28:02.9023675	Tags for minecraft:item mod id aethersdelight
+// 1.21.1	2025-04-22T23:03:03.1485695	Tags for minecraft:item mod id aethersdelight
 f2e00f97149d465c0cf513f56642fbc8473ae938 data/aethersdelight/tags/item/not_golden_amber_harvesters.json
 6ed3de893a2fa013643a5319b63fc32217f52ad0 data/aether/tags/item/treated_as_aether_item.json
 fb85a61635d5a57a942f9f2ed668e592e788a10d data/create/tags/item/upright_on_belt.json
@@ -13,6 +13,7 @@ cf5e457c695b92a15d6bdae8cf260d32eb492d3e data/c/tags/item/crops.json
 0650469cd2041ff72089c99c230c98a19f7bfebf data/c/tags/item/foods/cooked_moa.json
 63d0f4b64a65809e66336545dc26061187eee4ba data/c/tags/item/foods/cookie.json
 59f2460aaa4a4af91f70947af3f863475a1618d0 data/c/tags/item/foods/edible_when_placed.json
+8800bc2945af3a6295f8295ebd67dea4fa26203d data/c/tags/item/foods/food_poisoning.json
 c75bd62fe8938a59ba9aff97460d287a1c03f89f data/c/tags/item/foods/gingerbread.json
 e097c010b6b08604882fd1abf9b0852965881387 data/c/tags/item/foods/gingerbread_dough.json
 7305f7745e9b208e709d3dddc076c5303d49026b data/c/tags/item/foods/milk.json

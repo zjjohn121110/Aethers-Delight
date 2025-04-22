@@ -112,6 +112,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                         AethersDelightItems.RAW_MOA_CUTS.get()
         );
 
+        this.tag(Tags.Items.FOODS_FOOD_POISONING)
+                .add(AethersDelightItems.RAW_MOA.get(),
+                        AethersDelightItems.RAW_MOA_CUTS.get(),
+                        AethersDelightItems.GINGERBREAD_DOUGH.get(),
+                        AethersDelightItems.GINGERBREAD_MAN_BASE.get(),
+                        AethersDelightItems.GINGERBREAD_MOA_BASE.get(),
+                        AethersDelightItems.GINGERBREAD_STAR_BASE.get()
+        );
+
         this.tag(CommonTags.FOODS_COOKED_EGG).add(AethersDelightItems.FRIED_MOA_EGG.get());
 
         this.tag(Tags.Items.FOODS_SOUP)

@@ -16,9 +16,9 @@
     }
   },
   "pattern": [
-    "#A#",
-    "SHS",
-    " # "
+    "SAS",
+    "#H#",
+    " S "
   ],
   "result": {
     "count": 1,
