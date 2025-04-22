@@ -144,7 +144,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    implementation "maven.modrinth:farmers-delight:1.21.1-1.2.6"
+    implementation "maven.modrinth:farmers-delight:1.21.1-1.2.7"
     implementation "maven.modrinth:YhmgMVyu:SpinsIaR" //The Aether
     implementation "maven.modrinth:ccKDOlHs:qm96mQBh" //OwO Lib
     implementation "maven.modrinth:sq1f0DCq:vVb4GvvJ" //Cumulus

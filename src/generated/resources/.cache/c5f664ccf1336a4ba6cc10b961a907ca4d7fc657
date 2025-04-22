@@ -1,8 +1,23 @@
-// 1.21.1	2025-01-28T16:25:23.4646654	Tags for minecraft:block mod id aethersdelight
+// 1.21.1	2025-04-22T18:28:02.9056462	Tags for minecraft:block mod id aethersdelight
 db1465c30a23091baea7bd106daeb1d026585889 data/create/tags/block/passive_boiler_heaters.json
+18a62abe76768e972b2442ff12f69967ef28f9be data/c/tags/block/chains.json
+a2e9351d16ee91e43ecebfef750ddf38d841edcf data/c/tags/block/ores.json
+f0a6ba65cc23bb87dcce2a4dbccdd7f2b374a846 data/c/tags/block/ores/arkenium.json
+f5398fb9a286259bbd7717210bedde4eeec69507 data/c/tags/block/player_workstations/furnaces.json
+a110eb95a6567455b17d945f8d509ce8628d5e84 data/c/tags/block/storage_blocks.json
+0be7b8a660d6905ea73b449bbe8f62987e20d855 data/c/tags/block/storage_blocks/arkenium.json
+fc98452e9d7976c7971e10235b38ef2da0b57992 data/c/tags/block/storage_blocks/blue_berry.json
+20f2582b2b5d77c68d43e43c4b7fd43811143a6a data/c/tags/block/storage_blocks/enchanted_berry.json
+ae6c216d3967a07c650a0bdfbe9311acfdb0ce38 data/c/tags/block/storage_blocks/ginger.json
+aec9acbd78e792e80a69503dca52554c57cfbd4f data/c/tags/block/storage_blocks/leek.json
+8b809a940705e4bdb97b3c3eb3dbe576ac5cc058 data/c/tags/block/storage_blocks/parsnip.json
+66acd7e682bf2183985e9059fff975d2327ded3c data/c/tags/block/storage_blocks/peppermint_leaf.json
+e1a33b375665690950535c38e330598bdc2c525f data/c/tags/block/storage_blocks/raw_arkenium.json
 0e59047c016607eaf54a3642b663ded35f1e5e7d data/farmersdelight/tags/block/heat_sources.json
-66acd7e682bf2183985e9059fff975d2327ded3c data/farmersdelight/tags/block/mineable/knife.json
+7eb9b93e3aa1774887b207b3e62d8ec871a97890 data/farmersdelight/tags/block/mineable/knife.json
+b30323f55785df9652f47021ed1bd62bf8f39b3b data/farmersdelight/tags/block/wild_crops.json
 ef72ae3a791cae2439d57b4425c111b6810fbbe7 data/minecraft/tags/block/mineable/axe.json
 dd66a87149be7ea89623170258283010830c3266 data/minecraft/tags/block/mineable/pickaxe.json
 9e4fd878dd34fcbb7a8f14423f9a7aadf859584f data/minecraft/tags/block/needs_iron_tool.json
 a436b5af31c415dd4c59ac5f27b1c7a6d6eadf0b data/minecraft/tags/block/needs_stone_tool.json
+b30323f55785df9652f47021ed1bd62bf8f39b3b data/minecraft/tags/block/small_flowers.json

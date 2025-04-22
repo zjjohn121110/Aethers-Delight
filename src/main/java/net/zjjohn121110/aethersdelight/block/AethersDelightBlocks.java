@@ -73,11 +73,11 @@ public class AethersDelightBlocks {
     public static final DeferredBlock<Block> SKYROOT_CABINET = registerBlock("skyroot_cabinet",
             () -> new AetherCabinetBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BARREL)));
 
-    public static final DeferredBlock<Block> WILD_GINGER = registerBlock("wild_ginger",
+    public static final DeferredBlock<Block> WILD_GINGER = BLOCKS.register("wild_ginger",
             () -> new FlowerBlock(MobEffects.CONFUSION, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS).noOcclusion().noCollission()));
-    public static final DeferredBlock<Block> WILD_PARSNIP = registerBlock("wild_parsnip",
+    public static final DeferredBlock<Block> WILD_PARSNIP = BLOCKS.register("wild_parsnip",
             () -> new FlowerBlock(MobEffects.CONFUSION, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS).noOcclusion().noCollission()));
-    public static final DeferredBlock<Block> WILD_LEEK = registerBlock("wild_leek",
+    public static final DeferredBlock<Block> WILD_LEEK = BLOCKS.register("wild_leek",
             () -> new FlowerBlock(MobEffects.CONFUSION, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS).noOcclusion().noCollission()));
 
     public static final DeferredBlock<Block> WHITE_APPLE_PIE = BLOCKS.register("white_apple_pie",
