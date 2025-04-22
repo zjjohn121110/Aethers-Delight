@@ -11,6 +11,13 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.zjjohn121110.aethersdelight.AethersDelight;
+import net.zjjohn121110.aethersdelight.datagen.generators.ADBlockTagGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.ADDatapackGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.ADItemTagGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.ADRecipeGenerator;
+import net.zjjohn121110.aethersdelight.datagen.providers.ADBlockStateProvider;
+import net.zjjohn121110.aethersdelight.datagen.providers.ADItemModelProvider;
+import net.zjjohn121110.aethersdelight.datagen.providers.loot.ADBlockLoot;
 
 import java.util.Collections;
 import java.util.List;
@@ -27,19 +34,19 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ADRecipeGenerator(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(ModLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+                List.of(new LootTableProvider.SubProviderEntry(ADBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
 
-        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ADBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ADItemModelProvider(packOutput, existingFileHelper));
 
-        BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
+        BlockTagsProvider blockTagsProvider = new ADBlockTagGenerator(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
-        generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new ADItemTagGenerator(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
 
-        generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ADDatapackGenerator(packOutput, lookupProvider));
 
     }
 }

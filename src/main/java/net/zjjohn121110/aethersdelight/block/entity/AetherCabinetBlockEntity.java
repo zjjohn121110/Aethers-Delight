@@ -20,7 +20,7 @@ import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.zjjohn121110.aethersdelight.AethersDelight;
-import net.zjjohn121110.aethersdelight.block.custom.AetherCabinetBlock;
+import net.zjjohn121110.aethersdelight.block.AetherCabinetBlock;
 import vectorwing.farmersdelight.common.registry.ModSounds;
 
 public class AetherCabinetBlockEntity extends RandomizableContainerBlockEntity {

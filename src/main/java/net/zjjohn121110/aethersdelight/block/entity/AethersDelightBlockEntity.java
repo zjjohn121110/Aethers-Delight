@@ -5,8 +5,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.zjjohn121110.aethersdelight.AethersDelight;
-import net.zjjohn121110.aethersdelight.block.AethersDelightBlocks;
-import vectorwing.farmersdelight.common.block.entity.CabinetBlockEntity;
+import net.zjjohn121110.aethersdelight.registry.AethersDelightBlocks;
 
 import java.util.function.Supplier;
 

@@ -1,8 +1,8 @@
 package net.zjjohn121110.aethersdelight;
 
-import net.zjjohn121110.aethersdelight.block.AethersDelightBlocks;
+import net.zjjohn121110.aethersdelight.registry.AethersDelightBlocks;
 import net.zjjohn121110.aethersdelight.block.entity.AethersDelightBlockEntity;
-import net.zjjohn121110.aethersdelight.item.AethersDelightItems;
+import net.zjjohn121110.aethersdelight.registry.AethersDelightItems;
 import net.zjjohn121110.aethersdelight.loot.AethersDelightLootModifier;
 import org.slf4j.Logger;
 

@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import net.zjjohn121110.aethersdelight.block.custom.HolystoneStoveBlock;
+import net.zjjohn121110.aethersdelight.block.HolystoneStoveBlock;
 import vectorwing.farmersdelight.common.block.entity.SyncedBlockEntity;
 import vectorwing.farmersdelight.common.utility.ItemUtils;
 

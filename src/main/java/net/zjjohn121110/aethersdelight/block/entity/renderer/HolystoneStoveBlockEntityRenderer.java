@@ -12,7 +12,7 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec2;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import net.zjjohn121110.aethersdelight.block.custom.HolystoneStoveBlock;
+import net.zjjohn121110.aethersdelight.block.HolystoneStoveBlock;
 import net.zjjohn121110.aethersdelight.block.entity.HolystoneStoveBlockEntity;
 
 public class HolystoneStoveBlockEntityRenderer implements BlockEntityRenderer<HolystoneStoveBlockEntity> {
