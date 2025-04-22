@@ -59,8 +59,8 @@ public class AethersDelightTags {
         public static final TagKey<Block> STORAGE_BLOCKS_LEEK = commonBlockTag("storage_blocks/leek");
         public static final TagKey<Item> STORAGE_BLOCKS_ITEM_LEEK = commonItemTag("storage_blocks/leek");
 
-        public static final TagKey<Block> STORAGE_BLOCKS_PEPPERMINT_LEAF = commonBlockTag("storage_blocks/peppermin_leaf");
-        public static final TagKey<Item> STORAGE_BLOCKS_ITEM_PEPPERMINT_LEAF = commonItemTag("storage_blocks/peppermin_leaf");
+        public static final TagKey<Block> STORAGE_BLOCKS_PEPPERMINT_LEAF = commonBlockTag("storage_blocks/peppermint_leaf");
+        public static final TagKey<Item> STORAGE_BLOCKS_ITEM_PEPPERMINT_LEAF = commonItemTag("storage_blocks/peppermint_leaf");
 
         public static final TagKey<Block> STORAGE_BLOCKS_BLUE_BERRY = commonBlockTag("storage_blocks/blue_berry");
         public static final TagKey<Item> STORAGE_BLOCKS_ITEM_BLUE_BERRY = commonItemTag("storage_blocks/blue_berry");
