@@ -342,7 +342,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('b', AetherItems.SKYROOT_STICK.get())
                 .define('S', AetherItems.SKYROOT_SHOVEL.get())
                 .define('i', AethersDelightItems.ARKENIUM_INGOT.get())
-                .define('W', AethersDelightTags.Items.BUCKET)
+                .define('W', AethersDelightTags.CommonItemTags.BUCKETS_WATER)
                 .unlockedBy(getHasName(AethersDelightItems.ARKENIUM_INGOT.get()), has(AethersDelightItems.ARKENIUM_INGOT.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "cooking_pot_from_arkenium_recipe"));
 
@@ -365,7 +365,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CUTTING_BOARD.get())
                 .pattern("SPP")
                 .pattern("SPP")
-                .define('S', AethersDelightTags.Items.STICK)
+                .define('S', AethersDelightTags.CommonItemTags.RODS_WOODEN)
                 .define('P', AetherTags.Items.PLANKS_CRAFTING)
                 .unlockedBy(getHasName(AetherBlocks.SKYROOT_PLANKS.get()), has(AetherBlocks.SKYROOT_PLANKS.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "cutting_board_from_skyroot"));
@@ -379,13 +379,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.CANVAS.get()), has(ModItems.CANVAS.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "basket_from_skyroot_sticks"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CANVAS_SIGN.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CANVAS_SIGN.get(), 3)
                 .pattern("W#W")
                 .pattern("W#W")
                 .pattern(" S ")
                 .define('W', AetherTags.Items.PLANKS_CRAFTING)
                 .define('#', ModItems.CANVAS.get())
-                .define('S', AethersDelightTags.Items.STICK)
+                .define('S', AethersDelightTags.CommonItemTags.RODS_WOODEN)
                 .unlockedBy(getHasName(ModItems.CANVAS.get()), has(ModItems.CANVAS.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "canvas_sign_from_skyroot"));
 
@@ -746,22 +746,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .build(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.GOLDEN_OAK_LOG.get()),
-                        Ingredient.of(AethersDelightTags.Items.GOLDEN_AMBER_HARVESTABLE), AetherBlocks.STRIPPED_SKYROOT_LOG.get())
+                        Ingredient.of(AetherTags.Items.GOLDEN_AMBER_HARVESTERS), AetherBlocks.STRIPPED_SKYROOT_LOG.get())
                 .addResult(ModItems.TREE_BARK.get())
                 .addResult(AetherItems.GOLDEN_AMBER.get(), 4)
                 .build(recipeOutput, ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "amber_from_log"));
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.GOLDEN_OAK_WOOD.get()),
-                        Ingredient.of(AethersDelightTags.Items.GOLDEN_AMBER_HARVESTABLE), AetherBlocks.STRIPPED_SKYROOT_WOOD.get())
+                        Ingredient.of(AetherTags.Items.GOLDEN_AMBER_HARVESTERS), AetherBlocks.STRIPPED_SKYROOT_WOOD.get())
                 .addResult(ModItems.TREE_BARK.get())
                 .addResult(AetherItems.GOLDEN_AMBER.get(), 4)
                 .build(recipeOutput, ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "amber_from_wood"));
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.GOLDEN_OAK_LOG.get()),
-                        Ingredient.of(AethersDelightTags.Items.NOT_GOLDEN_AMBER_HARVESTABLE), AetherBlocks.STRIPPED_SKYROOT_LOG.get())
+                        Ingredient.of(AethersDelightTags.Items.NOT_GOLDEN_AMBER_HARVESTERS), AetherBlocks.STRIPPED_SKYROOT_LOG.get())
                 .addResult(ModItems.TREE_BARK.get())
                 .build(recipeOutput, ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "no_amber_from_log"));
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.GOLDEN_OAK_WOOD.get()),
-                        Ingredient.of(AethersDelightTags.Items.NOT_GOLDEN_AMBER_HARVESTABLE), AetherBlocks.STRIPPED_SKYROOT_WOOD.get())
+                        Ingredient.of(AethersDelightTags.Items.NOT_GOLDEN_AMBER_HARVESTERS), AetherBlocks.STRIPPED_SKYROOT_WOOD.get())
                 .addResult(ModItems.TREE_BARK.get())
                 .build(recipeOutput, ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "no_amber_from_wood"));
 

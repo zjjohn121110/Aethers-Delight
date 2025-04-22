@@ -1,22 +1,24 @@
 package net.zjjohn121110.aethersdelight.datagen;
 
+import java.util.concurrent.CompletableFuture;
+
+import org.jetbrains.annotations.Nullable;
+
 import com.aetherteam.aether.AetherTags;
 import com.aetherteam.aether.item.AetherItems;
+
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.world.item.Items;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.zjjohn121110.aethersdelight.AethersDelight;
 import net.zjjohn121110.aethersdelight.item.AethersDelightItems;
 import net.zjjohn121110.aethersdelight.util.AethersDelightTags;
-import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.common.tag.ModTags;
-
-import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends ItemTagsProvider {
     public ModItemTagProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider,
@@ -46,20 +48,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
                         AethersDelightItems.GRAVITITE_KNIFE.get()
                 );
 
-        this.tag(AethersDelightTags.Items.GOLDEN_AMBER_HARVESTABLE)
-                .add(AetherItems.ZANITE_AXE.get(),
-                        AetherItems.GRAVITITE_AXE.get()
-                );
-
-        this.tag(AethersDelightTags.Items.NOT_GOLDEN_AMBER_HARVESTABLE)
-                .add(Items.WOODEN_AXE,
-                        Items.STONE_AXE,
-                        Items.IRON_AXE,
-                        Items.DIAMOND_AXE,
-                        Items.NETHERITE_AXE,
-                        AetherItems.SKYROOT_AXE.get(),
-                        AetherItems.HOLYSTONE_AXE.get()
-                );
+        this.tag(AethersDelightTags.Items.NOT_GOLDEN_AMBER_HARVESTERS)
+                .addTag(ItemTags.AXES)
+                .remove(AetherTags.Items.GOLDEN_AMBER_HARVESTERS);
 
         this.tag(Tags.Items.FOODS_VEGETABLE)
                 .add(AethersDelightItems.GINGER.get(),
@@ -90,16 +81,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
         );
 
         //Misc Tags
-        this.tag(AethersDelightTags.Items.BUCKET)
-                .add(Items.WATER_BUCKET,
-                        AetherItems.SKYROOT_WATER_BUCKET.get()
-                );
-
-        this.tag(AethersDelightTags.Items.STICK)
-                .add(Items.STICK,
-                        AetherItems.SKYROOT_STICK.get()
-                );
-
         this.tag(CommonTags.FOODS_MILK)
                 .add(AetherItems.SKYROOT_MILK_BUCKET.get());
 

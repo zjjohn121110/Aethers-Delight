@@ -14,11 +14,7 @@ public class AethersDelightTags {
 
     public static class Items {
 
-        public static final TagKey<Item> GOLDEN_AMBER_HARVESTABLE = createTag("golden_amber_harvestable");
-        public static final TagKey<Item> NOT_GOLDEN_AMBER_HARVESTABLE = createTag("not_golden_amber_harvestable");
-
-        public static final TagKey<Item> BUCKET = createTag("bucket");
-        public static final TagKey<Item> STICK = createTag("stick");
+        public static final TagKey<Item> NOT_GOLDEN_AMBER_HARVESTERS = createTag("not_golden_amber_harvesters");
 
 
 
@@ -63,6 +59,9 @@ public class AethersDelightTags {
 
         public static final TagKey<Item> RAW_MOA = commonItemTag("raw_moa");
         public static final TagKey<Item> COOKED_MOA = commonItemTag("cooked_moa");
+
+        public static final TagKey<Item> BUCKETS_WATER = commonItemTag("buckets/water");
+        public static final TagKey<Item> RODS_WOODEN = commonItemTag("rods/wooden");
 
 
 
