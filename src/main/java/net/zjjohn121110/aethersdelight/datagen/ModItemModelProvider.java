@@ -74,6 +74,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(AethersDelightItems.COOKIE_CUTTER_MOA.get());
         basicItem(AethersDelightItems.COOKIE_CUTTER_STAR.get());
 
+        
+        Set<Item> flatBlockItems = Sets.newHashSet(
+            AethersDelightItems.WILD_GINGER.get(),
+            AethersDelightItems.WILD_LEEK.get(),
+            AethersDelightItems.WILD_PARSNIP.get()
+		);
+		takeAll(items, flatBlockItems.toArray(new Item[0])).forEach(item -> itemGeneratedModel(item, resourceBlock(itemName(item))));
+
         Set<Item> handheldItems = Sets.newHashSet(
                 AethersDelightItems.HOLYSTONE_KNIFE.get(),
                 AethersDelightItems.ZANITE_KNIFE.get(),
@@ -96,12 +104,17 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     public static final ResourceLocation MUG = ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "item/mug");
+    public static final String GENERATED = "item/generated";
     public static final String HANDHELD = "item/handheld";
 
 
 
     public void itemHandheldModel(Item item, ResourceLocation texture) {
         withExistingParent(itemName(item), HANDHELD).texture("layer0", texture);
+    }
+
+    public void itemGeneratedModel(Item item, ResourceLocation texture) {
+        withExistingParent(itemName(item), GENERATED).texture("layer0", texture);
     }
 
     public void itemMugModel(Item item, ResourceLocation texture) {
@@ -113,5 +126,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     public ResourceLocation resourceItem(String path) {
         return ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "item/" + path);
+    }
+
+    public ResourceLocation resourceBlock(String path) {
+        return ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "block/" + path);
     }
 }

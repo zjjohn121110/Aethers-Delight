@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-28T16:25:23.4656653	Item Models: aethersdelight
+// 1.21.1	2025-04-22T20:36:16.6157321	Item Models: aethersdelight
 13722431fcc565648463d452964e8bf2f293544a assets/aethersdelight/models/item/aechor_ice_cream.json
 d402a02a2b413b07f514e70d3ca7c7f7aefa83bb assets/aethersdelight/models/item/aechor_ice_cream_base.json
 39a3e4a78d1b225b2aef50d35a05d7e6b6a3c26d assets/aethersdelight/models/item/aechor_ice_cream_bucket_block.json
@@ -50,5 +50,8 @@ b244fc5f023e56b2b11d4a018badea2b8b874346 assets/aethersdelight/models/item/roast
 78ede4fd3dc3ac8e48ac90f78ccdefdb9a58e3a4 assets/aethersdelight/models/item/swet_soup.json
 85324bd9f27f7089e8d9c90a7ed0034584719b38 assets/aethersdelight/models/item/white_apple_pie.json
 e8cac2b90ccf72daf418361338b0481d60ba6d8c assets/aethersdelight/models/item/white_apple_pie_slice.json
+f43ee18466a16ba861791b567c7afba5d0c8375a assets/aethersdelight/models/item/wild_ginger.json
+9e47a9dc4e8705adef54b97c113fd96c50243bdc assets/aethersdelight/models/item/wild_leek.json
+0fa774d867b36e2ad5c3f82a451a81b2f95c8297 assets/aethersdelight/models/item/wild_parsnip.json
 f5bea41aacdbdc8d2db4cac1903695eac7251ad7 assets/aethersdelight/models/item/wing.json
 7e05f81030125f6b909373cb14fc4e839a539bfa assets/aethersdelight/models/item/zanite_knife.json

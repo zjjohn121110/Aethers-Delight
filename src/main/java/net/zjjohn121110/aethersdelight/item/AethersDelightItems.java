@@ -67,6 +67,14 @@ public class AethersDelightItems {
     public static final DeferredItem<Item> LEEK = ITEMS.register("leek",
             () -> new ItemNameBlockItem(AethersDelightBlocks.LEEK_CROP.get(), new Item.Properties().food(AethersDelightFoods.LEEK)));
 
+    //Wild Crops
+    public static final DeferredItem<Item> WILD_GINGER = ITEMS.register("wild_ginger",
+            () -> new BlockItem(AethersDelightBlocks.WILD_GINGER.get(), basicItem()));
+    public static final DeferredItem<Item> WILD_PARSNIP = ITEMS.register("wild_parsnip",
+            () -> new BlockItem(AethersDelightBlocks.WILD_PARSNIP.get(), basicItem()));
+    public static final DeferredItem<Item> WILD_LEEK = ITEMS.register("wild_leek",
+            () -> new BlockItem(AethersDelightBlocks.WILD_LEEK.get(), basicItem()));
+
     //Drinks and Jams
     public static final DeferredItem<Item> GINGER_ALE = ITEMS.register("ginger_ale",
             () -> new GingerAleItem(bottleItem().food(AethersDelightFoods.GINGER_ALE), true, false));

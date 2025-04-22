@@ -7,7 +7,7 @@
   "experience": 0.35,
   "ingredients": [
     {
-      "tag": "c:raw_moa"
+      "tag": "c:foods/raw_moa"
     },
     {
       "item": "aethersdelight:parsnip"
