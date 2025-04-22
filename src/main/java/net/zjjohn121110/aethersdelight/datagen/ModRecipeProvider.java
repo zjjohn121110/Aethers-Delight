@@ -323,9 +323,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "skyroot_tripwire_hook_from_arkenium"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, Items.CROSSBOW)
-                .pattern("#A#")
-                .pattern("SHS")
-                .pattern(" # ")
+                .pattern("SAS")
+                .pattern("#H#")
+                .pattern(" S ")
                 .define('A', AethersDelightItems.ARKENIUM_INGOT.get())
                 .define('S', Items.STICK)
                 .define('#', Items.STRING)
