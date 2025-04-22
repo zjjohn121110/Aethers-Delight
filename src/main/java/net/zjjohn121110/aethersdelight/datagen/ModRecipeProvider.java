@@ -553,7 +553,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, AethersDelightItems.MOA_EGG_OMELETTE.get())
                 .requires(AethersDelightItems.FRIED_MOA_EGG.get())
                 .requires(AethersDelightItems.LEEK.get())
-                .requires(AethersDelightTags.CommonItemTags.VEGETABLES_AETHER)
+                .requires(AethersDelightTags.CommonTags.FOODS_VEGETABLE_AETHER)
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(AetherItems.BLUE_MOA_EGG.get()), has(AetherTags.Items.MOA_EGGS))
                 .save(recipeOutput);
@@ -852,7 +852,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .build(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.MOA_STEW.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.BOWL)
-                .addIngredient(AethersDelightTags.CommonItemTags.FOODS_RAW_MOA)
+                .addIngredient(AethersDelightTags.CommonTags.FOODS_RAW_MOA)
                 .addIngredient(AethersDelightItems.PARSNIP.get())
                 .addIngredient(AethersDelightItems.PEPPERMINT_LEAF.get())
                 .unlockedByAnyIngredient(AethersDelightItems.RAW_MOA.get())
