@@ -1,4 +1,4 @@
-package net.zjjohn121110.aethersdelight.datagen.generators;
+package net.zjjohn121110.aethersdelight.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -22,8 +22,8 @@ import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.common.tag.CompatibilityTags;
 import vectorwing.farmersdelight.common.tag.ModTags;
 
-public class ADItemTagGenerator extends ItemTagsProvider {
-    public ADItemTagGenerator(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider,
+public class ModItemTagProvider extends ItemTagsProvider {
+    public ModItemTagProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider,
                               CompletableFuture<TagLookup<Block>> pBlockTags, @Nullable ExistingFileHelper existingFileHelper) {
         super(pOutput, pLookupProvider, pBlockTags, AethersDelight.MODID, existingFileHelper);
     }
