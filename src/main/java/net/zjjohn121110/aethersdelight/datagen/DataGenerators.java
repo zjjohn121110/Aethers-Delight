@@ -13,6 +13,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.zjjohn121110.aethersdelight.AethersDelight;
 import net.zjjohn121110.aethersdelight.datagen.generators.ADBlockTagGenerator;
 import net.zjjohn121110.aethersdelight.datagen.generators.ADDatapackGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.ADItemTagGenerator;
 import net.zjjohn121110.aethersdelight.datagen.generators.ADRecipeGenerator;
 import net.zjjohn121110.aethersdelight.datagen.providers.ADBlockStateProvider;
 import net.zjjohn121110.aethersdelight.datagen.providers.ADItemModelProvider;
@@ -42,7 +43,7 @@ public class DataGenerators {
 
         BlockTagsProvider blockTagsProvider = new ADBlockTagGenerator(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
-        generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new ADItemTagGenerator(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
 
         generator.addProvider(event.includeServer(), new ADDatapackGenerator(packOutput, lookupProvider));
