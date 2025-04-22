@@ -1,20 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "misc",
   "key": {
-    "G": {
-      "item": "aether:enchanted_gravitite"
-    },
     "S": {
       "item": "aether:skyroot_stick"
+    },
+    "Z": {
+      "item": "aether:zanite_gemstone"
     }
   },
   "pattern": [
-    "G",
-    "S"
+    "SZS",
+    " S ",
+    " S "
   ],
   "result": {
     "count": 1,
-    "id": "aethersdelight:gravitite_knife"
+    "id": "aether:nature_staff"
   }
 }

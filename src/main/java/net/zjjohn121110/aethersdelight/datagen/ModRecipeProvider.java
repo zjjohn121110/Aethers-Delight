@@ -190,7 +190,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(AetherBlocks.HOLYSTONE.get()), has(AetherBlocks.HOLYSTONE.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AethersDelightItems.HOLYSTONE_KNIFE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, AethersDelightItems.HOLYSTONE_KNIFE.get())
                 .pattern("H")
                 .pattern("S")
                 .define('H', AetherBlocks.HOLYSTONE.get())
@@ -198,7 +198,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(AetherBlocks.HOLYSTONE.get()), has(AetherBlocks.HOLYSTONE.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AethersDelightItems.ZANITE_KNIFE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, AethersDelightItems.ZANITE_KNIFE.get())
                 .pattern("Z")
                 .pattern("S")
                 .define('Z', AetherItems.ZANITE_GEMSTONE.get())
@@ -206,7 +206,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(AetherItems.ZANITE_GEMSTONE.get()), has(AetherItems.ZANITE_GEMSTONE.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AethersDelightItems.GRAVITITE_KNIFE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AetherItems.NATURE_STAFF.get())
+                .pattern("SZS")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('Z', AetherItems.ZANITE_GEMSTONE.get())
+                .define('S', AetherItems.SKYROOT_STICK.get())
+                .unlockedBy(getHasName(AetherItems.ZANITE_GEMSTONE.get()), has(AetherItems.ZANITE_GEMSTONE.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, AethersDelightItems.GRAVITITE_KNIFE.get())
                 .pattern("G")
                 .pattern("S")
                 .define('G', AetherBlocks.ENCHANTED_GRAVITITE.get())
