@@ -60,9 +60,6 @@ public class AethersDelightTags {
         public static final TagKey<Item> RAW_MOA = commonItemTag("raw_moa");
         public static final TagKey<Item> COOKED_MOA = commonItemTag("cooked_moa");
 
-        public static final TagKey<Item> BUCKETS_WATER = commonItemTag("buckets/water");
-        public static final TagKey<Item> RODS_WOODEN = commonItemTag("rods/wooden");
-
 
 
         private static TagKey<Item> commonItemTag(String path) {

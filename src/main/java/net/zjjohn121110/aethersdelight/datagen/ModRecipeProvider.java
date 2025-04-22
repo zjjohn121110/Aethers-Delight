@@ -342,7 +342,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('b', AetherItems.SKYROOT_STICK.get())
                 .define('S', AetherItems.SKYROOT_SHOVEL.get())
                 .define('i', AethersDelightItems.ARKENIUM_INGOT.get())
-                .define('W', AethersDelightTags.CommonItemTags.BUCKETS_WATER)
+                .define('W', Tags.Items.BUCKETS_WATER)
                 .unlockedBy(getHasName(AethersDelightItems.ARKENIUM_INGOT.get()), has(AethersDelightItems.ARKENIUM_INGOT.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "cooking_pot_from_arkenium_recipe"));
 
@@ -365,7 +365,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CUTTING_BOARD.get())
                 .pattern("SPP")
                 .pattern("SPP")
-                .define('S', AethersDelightTags.CommonItemTags.RODS_WOODEN)
+                .define('S', Tags.Items.RODS_WOODEN)
                 .define('P', AetherTags.Items.PLANKS_CRAFTING)
                 .unlockedBy(getHasName(AetherBlocks.SKYROOT_PLANKS.get()), has(AetherBlocks.SKYROOT_PLANKS.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "cutting_board_from_skyroot"));
@@ -385,7 +385,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .define('W', AetherTags.Items.PLANKS_CRAFTING)
                 .define('#', ModItems.CANVAS.get())
-                .define('S', AethersDelightTags.CommonItemTags.RODS_WOODEN)
+                .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy(getHasName(ModItems.CANVAS.get()), has(ModItems.CANVAS.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "canvas_sign_from_skyroot"));
 
@@ -852,7 +852,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .build(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.MOA_STEW.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.BOWL)
-                .addIngredient(AethersDelightTags.CommonItemTags.RAW_MOA)
+                .addIngredient(AethersDelightTags.CommonItemTags.FOODS_RAW_MOA)
                 .addIngredient(AethersDelightItems.PARSNIP.get())
                 .addIngredient(AethersDelightItems.PEPPERMINT_LEAF.get())
                 .unlockedByAnyIngredient(AethersDelightItems.RAW_MOA.get())
