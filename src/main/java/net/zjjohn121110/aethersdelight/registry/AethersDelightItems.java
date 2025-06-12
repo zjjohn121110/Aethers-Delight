@@ -154,9 +154,8 @@ public class AethersDelightItems {
             () -> new ZaniteKnifeItem());
     public static final DeferredItem<Item> GRAVITITE_KNIFE = ITEMS.register("gravitite_knife",
             () -> new GravititeKnifeItem());
-    public static final DeferredItem<Item> ARKENIUM_KNIFE = ITEMS.register("arkenium_knife",
-            () -> new KnifeItem(AethersDelightToolTiers.ARKENIUM, new Item.Properties().attributes(KnifeItem
-                    .createAttributes(AethersDelightToolTiers.ARKENIUM, 0.5F, -2.0F))));
+    public static final DeferredItem<ArkeniumKnifeItem> ARKENIUM_KNIFE = ITEMS.register("arkenium_knife",
+            () -> new ArkeniumKnifeItem());
 
 
 
