@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_berry_jam": {
+    "has_blue_berry_muffin": {
       "conditions": {
         "items": [
           {
-            "items": "aethersdelight:blue_berry_jam"
+            "items": "aethersdelight:blue_berry_muffin"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "aether:enchanted_muffin_from_enchanting"
+        "recipe": "aethersdelight:enchanted_jam_enchanting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_blue_berry_jam"
+      "has_blue_berry_muffin"
     ]
   ],
   "rewards": {
     "recipes": [
-      "aether:enchanted_muffin_from_enchanting"
+      "aethersdelight:enchanted_jam_enchanting"
     ]
   }
 }

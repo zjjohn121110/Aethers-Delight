@@ -8,6 +8,7 @@ import com.aetherteam.aether.recipe.AetherRecipeSerializers;
 import com.aetherteam.aether.recipe.builder.AetherCookingRecipeBuilder;
 import com.aetherteam.aether.recipe.builder.AltarRepairBuilder;
 import com.aetherteam.aether.recipe.recipes.item.EnchantingRecipe;
+import com.aetherteam.aether.recipe.recipes.item.FreezingRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -199,17 +200,8 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, AethersDelightItems.ZANITE_KNIFE.get())
-                .pattern("Z")
-                .pattern("S")
-                .define('Z', AetherItems.ZANITE_GEMSTONE.get())
-                .define('S', AetherItems.SKYROOT_STICK.get())
-                .unlockedBy(getHasName(AetherItems.ZANITE_GEMSTONE.get()), has(AetherItems.ZANITE_GEMSTONE.get()))
-                .save(recipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AetherItems.NATURE_STAFF.get())
-                .pattern("SZS")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern(" Z")
+                .pattern("S ")
                 .define('Z', AetherItems.ZANITE_GEMSTONE.get())
                 .define('S', AetherItems.SKYROOT_STICK.get())
                 .unlockedBy(getHasName(AetherItems.ZANITE_GEMSTONE.get()), has(AetherItems.ZANITE_GEMSTONE.get()))
@@ -889,20 +881,29 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
 
 
         //Enchanting Recipes
-        enchantingRecipe(RecipeCategory.MISC, AethersDelightItems.ENCHANTED_BERRY_MUFFIN.get(), AethersDelightItems.BLUE_BERRY_MUFFIN.get(), 0.35F, 150).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Aether.MODID, "enchanted_jam_from_enchanting"));
-        enchantingRecipe(RecipeCategory.MISC, AethersDelightItems.ENCHANTED_BERRY_JAM.get(), AethersDelightItems.BLUE_BERRY_JAM.get(), 0.35F, 150).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Aether.MODID, "enchanted_muffin_from_enchanting"));
+        enchantingRecipe(RecipeCategory.MISC, AethersDelightItems.ENCHANTED_BERRY_MUFFIN.get(), AethersDelightItems.BLUE_BERRY_MUFFIN.get(), 0.35F, 150).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "enchanted_jam_enchanting"));
+        enchantingRecipe(RecipeCategory.MISC, AethersDelightItems.ENCHANTED_BERRY_JAM.get(), AethersDelightItems.BLUE_BERRY_JAM.get(), 0.35F, 150).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "enchanted_muffin_enchanting"));
         enchantingRecipe(RecipeCategory.MISC, Items.SUGAR, AetherItems.SWET_BALL.get(), 0, 125).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Aether.MODID, "sugar_from_enchanting_blue"));
 
         repairingRecipe(RecipeCategory.COMBAT, AethersDelightItems.HOLYSTONE_KNIFE.get(), 250).group("altar_knife_repair").save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Aether.MODID, "holystone_knife_repairing"));
         repairingRecipe(RecipeCategory.COMBAT, AethersDelightItems.ZANITE_KNIFE.get(), 250).group("altar_knife_repair").save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Aether.MODID, "zanite_knife_repairing"));
         repairingRecipe(RecipeCategory.COMBAT, AethersDelightItems.GRAVITITE_KNIFE.get(), 250).group("altar_knife_repair").save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Aether.MODID, "gravitite_knife_repairing"));
+
+        //Freezing Recipes
+        freezingRecipe(RecipeCategory.MISC, AethersDelightItems.AECHOR_ICE_CREAM_BUCKET_BLOCK.get(), AethersDelightItems.AECHOR_ICE_CREAM_BASE.get(), 0.05f, 400).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "aechor_ice_cream_freezing"));
     }
 
-    protected AetherCookingRecipeBuilder enchantingRecipe(RecipeCategory category, ItemLike result, ItemLike ingredient, float experience, int duration) {
+    private AetherCookingRecipeBuilder enchantingRecipe(RecipeCategory category, ItemLike result, ItemLike ingredient, float experience, int duration) {
         return AetherCookingRecipeBuilder.generic(Ingredient.of(new ItemStack(ingredient, 1)), category, result, experience, duration, AetherRecipeSerializers.ENCHANTING.get(), EnchantingRecipe::new)
                 .unlockedBy(getHasName(ingredient), has(ingredient));
     }
-    protected AltarRepairBuilder repairingRecipe(RecipeCategory category, ItemLike item, int duration) {
+
+    private AetherCookingRecipeBuilder freezingRecipe(RecipeCategory category, ItemLike result, ItemLike ingredient, float experience, int duration) {
+        return AetherCookingRecipeBuilder.generic(Ingredient.of(new ItemStack(ingredient, 1)), category, result, experience, duration, AetherRecipeSerializers.FREEZING.get(), FreezingRecipe::new)
+                .unlockedBy(getHasName(ingredient), has(ingredient));
+    }
+
+    private AltarRepairBuilder repairingRecipe(RecipeCategory category, ItemLike item, int duration) {
         return AltarRepairBuilder.repair(Ingredient.of(new ItemStack(item, 1)), category, duration)
                 .unlockedBy(getHasName(item), has(item));
     }

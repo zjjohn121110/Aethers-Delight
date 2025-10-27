@@ -1,0 +1,13 @@
+{
+  "type": "aether:freezing",
+  "category": "freezable_misc",
+  "cookingtime": 400,
+  "experience": 0.05,
+  "ingredient": {
+    "item": "aethersdelight:aechor_ice_cream_base"
+  },
+  "result": {
+    "count": 1,
+    "id": "aethersdelight:aechor_ice_cream_bucket_block"
+  }
+}
