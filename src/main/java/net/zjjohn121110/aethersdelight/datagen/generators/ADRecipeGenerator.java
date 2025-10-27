@@ -532,12 +532,6 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.STRAW.get()), has(ModItems.STRAW.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "aether_compost_from_rotten_flesh"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.WHEAT_DOUGH.get(), 3)
-                .requires(AetherItems.SKYROOT_WATER_BUCKET.get())
-                .requires(Items.WHEAT, 3)
-                .unlockedBy(getHasName(Items.WHEAT), has(Items.WHEAT))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "wheat_dough_from_skyroot_bucket"));
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, AethersDelightItems.GINGERBREAD_DOUGH.get(), 3)
                 .requires(Tags.Items.EGGS)
                 .requires(AethersDelightItems.GINGER_SPICE.get())
