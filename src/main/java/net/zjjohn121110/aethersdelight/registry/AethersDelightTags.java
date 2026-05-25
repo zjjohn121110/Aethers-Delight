@@ -91,6 +91,9 @@ public class AethersDelightTags {
         public static final TagKey<Item> FOODS_GINGERBREAD_DOUGH = commonItemTag("foods/gingerbread_dough");
         public static final TagKey<Item> FOODS_GINGERBREAD = commonItemTag("foods/gingerbread");
 
+        public static final TagKey<Item> FOODS_MILK = commonItemTag("foods/milk");
+        public static final TagKey<Item> CABBAGE_ROLL_INGREDIENTS = farmersDelightItemTag("cabbage_roll_ingredients");
+
 
 
         private static TagKey<Block> commonBlockTag(String path) {
@@ -98,6 +101,9 @@ public class AethersDelightTags {
         }
         private static TagKey<Item> commonItemTag(String path) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
+        }
+        private static TagKey<Item> farmersDelightItemTag(String path) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("farmersdelight", path));
         }
     }
 }

@@ -371,7 +371,7 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(AetherBlocks.SKYROOT_PLANKS.get()), has(AetherBlocks.SKYROOT_PLANKS.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "cutting_board_from_skyroot"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BASKET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BAMBOO_BASKET.get())
                 .pattern("S S")
                 .pattern("# #")
                 .pattern("S#S")
@@ -429,7 +429,7 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .define('B', AetherItems.BLUE_BERRY.get())
                 .define('S', Items.SUGAR)
                 .define('W', Items.WHEAT)
-                .define('M', CommonTags.FOODS_MILK)
+                .define('M', AethersDelightTags.CommonTags.FOODS_MILK)
                 .unlockedBy(getHasName(AetherItems.BLUE_BERRY.get()), has(AetherItems.BLUE_BERRY.get()))
                 .save(recipeOutput);
 
@@ -439,7 +439,7 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .define('B', AetherItems.ENCHANTED_BERRY.get())
                 .define('S', Items.SUGAR)
                 .define('W', Items.WHEAT)
-                .define('M', CommonTags.FOODS_MILK)
+                .define('M', AethersDelightTags.CommonTags.FOODS_MILK)
                 .unlockedBy(getHasName(AetherItems.ENCHANTED_BERRY.get()), has(AetherItems.ENCHANTED_BERRY.get()))
                 .save(recipeOutput);
 
@@ -564,7 +564,7 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .requires(Items.SUGAR)
                 .requires(Items.SUGAR)
                 .requires(Tags.Items.EGGS)
-                .requires(CommonTags.FOODS_MILK)
+                .requires(AethersDelightTags.CommonTags.FOODS_MILK)
                 .requires(AetherItems.SKYROOT_BUCKET.get())
                 .unlockedBy(getHasName(AetherItems.AECHOR_PETAL.get()), has(AetherItems.AECHOR_PETAL.get()))
                 .save(recipeOutput);
@@ -701,12 +701,12 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
 
         //Cutting Board Recipes
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AethersDelightItems.GINGER.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), AethersDelightItems.GINGER_SPICE.get(), 2)
-                .build(recipeOutput);
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), AethersDelightItems.GINGER_SPICE.get(), 2)
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AethersDelightItems.PEPPERMINT_CANDY_DOUGH.get()),
                         Ingredient.of(Items.SHEARS), AetherItems.CANDY_CANE.get(), 4)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AethersDelightItems.GINGERBREAD_DOUGH.get()),
                         Ingredient.of(AethersDelightItems.COOKIE_CUTTER_MAN.get()), AethersDelightItems.GINGERBREAD_MAN_BASE.get(), 2)
@@ -721,24 +721,24 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .build(recipeOutput, ResourceLocation.fromNamespaceAndPath(AethersDelight.MODID, "cutting/gingerbread_star_base"));
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AethersDelightItems.RAW_MOA.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), AethersDelightItems.RAW_MOA_CUTS.get(), 2)
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), AethersDelightItems.RAW_MOA_CUTS.get(), 2)
                 .addResult(Items.BONE)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AethersDelightItems.COOKED_MOA.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), AethersDelightItems.COOKED_MOA_CUTS.get(), 2)
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), AethersDelightItems.COOKED_MOA_CUTS.get(), 2)
                 .addResult(Items.BONE)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.SKYROOT_LOG.get()),
                         Ingredient.of(ItemTags.AXES), AetherBlocks.STRIPPED_SKYROOT_LOG.get())
                 .addResult(ModItems.TREE_BARK.get())
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.SKYROOT_WOOD.get()),
                         Ingredient.of(ItemTags.AXES), AetherBlocks.STRIPPED_SKYROOT_WOOD.get())
                 .addResult(ModItems.TREE_BARK.get())
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.GOLDEN_OAK_LOG.get()),
                         Ingredient.of(AetherTags.Items.GOLDEN_AMBER_HARVESTERS), AetherBlocks.STRIPPED_SKYROOT_LOG.get())
@@ -762,31 +762,31 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.SKYROOT_DOOR.get()),
                         Ingredient.of(ItemTags.AXES), AetherBlocks.SKYROOT_PLANKS.get())
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.SKYROOT_TRAPDOOR.get()),
                         Ingredient.of(ItemTags.AXES), AetherBlocks.SKYROOT_PLANKS.get())
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.WHITE_FLOWER.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), Items.WHITE_DYE, 2)
-                .build(recipeOutput);
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), Items.WHITE_DYE, 2)
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherBlocks.PURPLE_FLOWER.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), Items.PURPLE_DYE, 2)
-                .build(recipeOutput);
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), Items.PURPLE_DYE, 2)
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherItems.BLUE_BERRY.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), Items.BLUE_DYE)
-                .build(recipeOutput);
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), Items.BLUE_DYE)
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AetherItems.ENCHANTED_BERRY.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), Items.YELLOW_DYE)
-                .build(recipeOutput);
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), Items.YELLOW_DYE)
+                .save(recipeOutput);
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(AethersDelightItems.PEPPERMINT_LEAF.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), Items.GREEN_DYE)
-                .build(recipeOutput);
+                        Ingredient.of(CommonTags.Items.TOOLS_KNIFE), Items.GREEN_DYE)
+                .save(recipeOutput);
 
 
 
@@ -796,55 +796,55 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .addIngredient(AethersDelightItems.PEPPERMINT_EXTRACT.get())
                 .unlockedByAnyIngredient(Items.SUGAR)
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.COOKED_PARSNIP.get(), 1, NORMAL_COOKING, SMALL_EXP)
                 .addIngredient(AethersDelightItems.PARSNIP.get())
                 .addIngredient(AethersDelightItems.GINGER_SPICE.get())
                 .unlockedByAnyIngredient(AethersDelightItems.GINGER_SPICE.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.BLUE_BERRY_JAM.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.GLASS_BOTTLE)
                 .addIngredient(AetherItems.BLUE_BERRY.get(), 2)
                 .addIngredient(Items.SUGAR)
                 .unlockedByAnyIngredient(AetherItems.BLUE_BERRY.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.ENCHANTED_BERRY_JAM.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.GLASS_BOTTLE)
                 .addIngredient(AetherItems.ENCHANTED_BERRY.get(), 2)
                 .addIngredient(Items.SUGAR)
                 .unlockedByAnyIngredient(AetherItems.ENCHANTED_BERRY.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.GINGER_ALE.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.GLASS_BOTTLE)
                 .addIngredient(AethersDelightItems.GINGER_SPICE.get(), 2)
                 .addIngredient(Items.SUGAR)
                 .unlockedByAnyIngredient(AethersDelightItems.GINGER_SPICE.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.PEPPERMINT_TEA.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.GLASS_BOTTLE)
                 .addIngredient(AethersDelightItems.PEPPERMINT_LEAF.get(), 3)
                 .unlockedByAnyIngredient(AethersDelightItems.PEPPERMINT_LEAF.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.SWET_SOUP.get(), 1, FAST_COOKING, SMALL_EXP, Items.BOWL)
                 .addIngredient(AetherItems.SWET_BALL.get())
                 .addIngredient(AetherItems.BLUE_BERRY.get())
                 .unlockedByAnyIngredient(AetherItems.SWET_BALL.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.GINGER_SOUP.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.BOWL)
                 .addIngredient(AethersDelightItems.GINGER.get(), 2)
                 .addIngredient(AethersDelightItems.PARSNIP.get())
                 .unlockedByAnyIngredient(AethersDelightItems.GINGER.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.MOA_STEW.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.BOWL)
                 .addIngredient(AethersDelightTags.CommonTags.FOODS_RAW_MOA)
@@ -852,7 +852,7 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .addIngredient(AethersDelightItems.PEPPERMINT_LEAF.get())
                 .unlockedByAnyIngredient(AethersDelightItems.RAW_MOA.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.FLYING_BEEF_STEW.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.BOWL)
                 .addIngredient(AethersDelightItems.GINGER.get())
@@ -862,7 +862,7 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .addIngredient(Items.WHEAT)
                 .unlockedByAnyIngredient(AethersDelightItems.WING.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
         CookingPotRecipeBuilder.cookingPotRecipe(AethersDelightItems.PARSNIP_PASTA.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.BOWL)
                 .addIngredient(AethersDelightItems.PARSNIP.get())
@@ -870,7 +870,7 @@ public class ADRecipeGenerator extends RecipeProvider implements IConditionBuild
                 .addIngredient(AethersDelightItems.LEEK.get())
                 .unlockedByAnyIngredient(AethersDelightItems.PARSNIP.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-                .build(recipeOutput);
+                .save(recipeOutput);
 
 
 

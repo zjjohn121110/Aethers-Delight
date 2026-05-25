@@ -8,7 +8,7 @@ import net.zjjohn121110.aethersdelight.AethersDelight;
 import net.zjjohn121110.aethersdelight.block.entity.AethersDelightBlockEntity;
 import net.zjjohn121110.aethersdelight.block.entity.renderer.HolystoneStoveBlockEntityRenderer;
 
-@EventBusSubscriber(modid = AethersDelight.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = AethersDelight.MODID, value = Dist.CLIENT)
 public class ClientEvents {
     @SubscribeEvent
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {

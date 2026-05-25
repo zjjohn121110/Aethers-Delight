@@ -31,14 +31,14 @@ public class ADItemTagGenerator extends ItemTagsProvider {
     @SuppressWarnings("unchecked")
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(CommonTags.TOOLS_KNIFE)
+        this.tag(CommonTags.Items.TOOLS_KNIFE)
                 .add(AethersDelightItems.HOLYSTONE_KNIFE.get(),
                         AethersDelightItems.ZANITE_KNIFE.get(),
                         AethersDelightItems.GRAVITITE_KNIFE.get(),
                         AetherItems.PIG_SLAYER.get()
                 );
 
-        this.tag(ModTags.KNIVES)
+        this.tag(ModTags.Items.KNIVES)
                 .add(AethersDelightItems.HOLYSTONE_KNIFE.get(),
                         AethersDelightItems.ZANITE_KNIFE.get(),
                         AethersDelightItems.GRAVITITE_KNIFE.get(),
@@ -121,7 +121,7 @@ public class ADItemTagGenerator extends ItemTagsProvider {
                         AethersDelightItems.GINGERBREAD_STAR_BASE.get()
         );
 
-        this.tag(CommonTags.FOODS_COOKED_EGG).add(AethersDelightItems.FRIED_MOA_EGG.get());
+        this.tag(CommonTags.Items.FOODS_COOKED_EGG).add(AethersDelightItems.FRIED_MOA_EGG.get());
 
         this.tag(Tags.Items.FOODS_SOUP)
                 .add(AethersDelightItems.SWET_SOUP.get(),
@@ -141,7 +141,7 @@ public class ADItemTagGenerator extends ItemTagsProvider {
                         AethersDelightBlocks.AECHOR_ICE_CREAM_BUCKET_BLOCK.asItem()
                 );
 
-        this.tag(ModTags.CABBAGE_ROLL_INGREDIENTS).addTag(AethersDelightTags.CommonTags.FOODS_RAW_MOA);
+        this.tag(AethersDelightTags.CommonTags.CABBAGE_ROLL_INGREDIENTS).addTag(AethersDelightTags.CommonTags.FOODS_RAW_MOA);
 
         this.tag(AethersDelightTags.CommonTags.FOODS_RAW_MOA)
                 .add(AethersDelightItems.RAW_MOA.get(),
@@ -167,7 +167,7 @@ public class ADItemTagGenerator extends ItemTagsProvider {
         this.tag(Tags.Items.NUGGETS).addTag(AethersDelightTags.CommonTags.NUGGETS_ARKENIUM);
                 this.tag(AethersDelightTags.CommonTags.NUGGETS_ARKENIUM).add(AethersDelightItems.ARKENIUM_NUGGET.get());
 
-        this.tag(ModTags.WOODEN_CABINETS).add(AethersDelightBlocks.SKYROOT_CABINET.asItem());
+        this.tag(ModTags.Items.CABINETS_WOODEN).add(AethersDelightBlocks.SKYROOT_CABINET.asItem());
 
         this.tag(Tags.Items.STORAGE_BLOCKS)
                 .addTags(AethersDelightTags.CommonTags.STORAGE_BLOCKS_ITEM_GINGER,
@@ -199,7 +199,7 @@ public class ADItemTagGenerator extends ItemTagsProvider {
                         AethersDelightBlocks.WILD_PARSNIP.asItem()
                 );
 
-        this.tag(ModTags.WILD_CROPS_ITEM)
+        this.tag(ModTags.Items.WILD_CROPS)
                 .add(AethersDelightBlocks.WILD_GINGER.asItem(),
                         AethersDelightBlocks.WILD_LEEK.asItem(),
                         AethersDelightBlocks.WILD_PARSNIP.asItem()
@@ -208,7 +208,7 @@ public class ADItemTagGenerator extends ItemTagsProvider {
         this.tag(Tags.Items.PLAYER_WORKSTATIONS_FURNACES).add(AethersDelightBlocks.HOLYSTONE_FURNACE.asItem());
 
         //Misc Tags
-        this.tag(CommonTags.FOODS_MILK)
+        this.tag(AethersDelightTags.CommonTags.FOODS_MILK)
                 .add(AetherItems.SKYROOT_MILK_BUCKET.get());
 
     }

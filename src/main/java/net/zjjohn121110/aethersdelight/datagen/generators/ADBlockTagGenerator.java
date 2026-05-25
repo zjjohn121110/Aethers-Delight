@@ -52,7 +52,7 @@ public class ADBlockTagGenerator extends BlockTagsProvider {
                         AethersDelightBlocks.ARKENIUM_LANTERN.get()
                 );
 
-        this.tag(ModTags.MINEABLE_WITH_KNIFE)
+        this.tag(ModTags.Blocks.MINEABLE_WITH_KNIFE)
                 .add(AethersDelightBlocks.PEPPERMINT_LEAF_BAG.get(),
                         AethersDelightBlocks.WHITE_APPLE_PIE.get(),
                         AethersDelightBlocks.ROAST_MOA.get()
@@ -70,7 +70,7 @@ public class ADBlockTagGenerator extends BlockTagsProvider {
         this.tag(CompatibilityTags.CREATE_PASSIVE_BOILER_HEATERS)
                 .add(AethersDelightBlocks.HOLYSTONE_STOVE.get());
 
-        this.tag(ModTags.HEAT_SOURCES)
+        this.tag(ModTags.Blocks.HEAT_SOURCES)
                 .add(AethersDelightBlocks.HOLYSTONE_STOVE.get(),
                         AetherBlocks.LIGHT_HELLFIRE_STONE.get()
                 );
@@ -105,7 +105,7 @@ public class ADBlockTagGenerator extends BlockTagsProvider {
                         AethersDelightBlocks.WILD_PARSNIP.get()
                 );
 
-        this.tag(ModTags.WILD_CROPS)
+        this.tag(ModTags.Blocks.WILD_CROPS)
                 .add(AethersDelightBlocks.WILD_GINGER.get(),
                         AethersDelightBlocks.WILD_LEEK.get(),
                         AethersDelightBlocks.WILD_PARSNIP.get()
