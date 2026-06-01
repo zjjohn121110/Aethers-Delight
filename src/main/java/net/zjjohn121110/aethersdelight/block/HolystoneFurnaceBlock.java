@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.zjjohn121110.aethersdelight.block.entity.AethersDelightBlockEntity;
+import net.zjjohn121110.aethersdelight.registry.ADBlockEntities;
 import net.zjjohn121110.aethersdelight.block.entity.HolystoneFurnaceBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -33,7 +33,7 @@ public class HolystoneFurnaceBlock extends AbstractFurnaceBlock {
 
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
-        return level.isClientSide() ? null : createTickerHelper(blockEntityType, AethersDelightBlockEntity.HOLYSTONE_FURNACE.get(), AbstractFurnaceBlockEntity::serverTick);
+        return level.isClientSide() ? null : createTickerHelper(blockEntityType, ADBlockEntities.HOLYSTONE_FURNACE.get(), AbstractFurnaceBlockEntity::serverTick);
     }
 
     @Override

@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-22T23:03:03.1485695	Tags for minecraft:item mod id aethersdelight
+// 1.21.1	2026-06-01T14:58:21.4738617	Tags for minecraft:item mod id aethersdelight
 f2e00f97149d465c0cf513f56642fbc8473ae938 data/aethersdelight/tags/item/not_golden_amber_harvesters.json
 6ed3de893a2fa013643a5319b63fc32217f52ad0 data/aether/tags/item/treated_as_aether_item.json
 fb85a61635d5a57a942f9f2ed668e592e788a10d data/create/tags/item/upright_on_belt.json
@@ -7,6 +7,7 @@ cf5e457c695b92a15d6bdae8cf260d32eb492d3e data/c/tags/item/crops.json
 994e30cece3dbf60240d6b0e7f4c9040ea22eec3 data/c/tags/item/crops/ginger.json
 6788db6f902f62d97c780e8a981cf09086877935 data/c/tags/item/crops/leek.json
 0cdf321a68f9e732d9deebb20aa35022046feea3 data/c/tags/item/crops/parsnip.json
+7305f7745e9b208e709d3dddc076c5303d49026b data/c/tags/item/drinks/milk.json
 1218782965e2c7338c272fcbaacbb79f343e9817 data/c/tags/item/foods.json
 6f490389b7268cdb9d20fc81206bb380589f3183 data/c/tags/item/foods/cooked_egg.json
 0650469cd2041ff72089c99c230c98a19f7bfebf data/c/tags/item/foods/cooked_meat.json
@@ -16,7 +17,6 @@ cf5e457c695b92a15d6bdae8cf260d32eb492d3e data/c/tags/item/crops.json
 8800bc2945af3a6295f8295ebd67dea4fa26203d data/c/tags/item/foods/food_poisoning.json
 c75bd62fe8938a59ba9aff97460d287a1c03f89f data/c/tags/item/foods/gingerbread.json
 e097c010b6b08604882fd1abf9b0852965881387 data/c/tags/item/foods/gingerbread_dough.json
-7305f7745e9b208e709d3dddc076c5303d49026b data/c/tags/item/foods/milk.json
 b8124817be3d54e6b3cb4b1c12079f5fdb5f3d2c data/c/tags/item/foods/raw_meat.json
 b8124817be3d54e6b3cb4b1c12079f5fdb5f3d2c data/c/tags/item/foods/raw_moa.json
 b6958af656faf9fdb3e18fd3609693a01eb2fccc data/c/tags/item/foods/soup.json
@@ -41,10 +41,7 @@ aec9acbd78e792e80a69503dca52554c57cfbd4f data/c/tags/item/storage_blocks/leek.js
 66acd7e682bf2183985e9059fff975d2327ded3c data/c/tags/item/storage_blocks/peppermint_leaf.json
 e1a33b375665690950535c38e330598bdc2c525f data/c/tags/item/storage_blocks/raw_arkenium.json
 7d3378c9b8b320157744b6f3b4cafec064eade72 data/c/tags/item/tools/knife.json
-8823b2203244cfadf1c28f92ad9f195701b0b6a4 data/farmersdelight/tags/item/cabbage_roll_ingredients.json
-11ec1c66169d658b6b93fdabf2b713ac7b232cfe data/farmersdelight/tags/item/cabinets/wooden.json
 7d3378c9b8b320157744b6f3b4cafec064eade72 data/farmersdelight/tags/item/tools/knives.json
-b30323f55785df9652f47021ed1bd62bf8f39b3b data/farmersdelight/tags/item/wild_crops.json
 e503e34dabeae41d274f1935a5c898f395c14888 data/minecraft/tags/item/meat.json
 b30323f55785df9652f47021ed1bd62bf8f39b3b data/minecraft/tags/item/small_flowers.json
 e08333d345fbe57f8d35c95f2e880a3ac31c4e32 data/origins/tags/item/meat.json

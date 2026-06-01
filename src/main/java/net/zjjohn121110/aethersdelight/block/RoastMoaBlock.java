@@ -28,7 +28,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightItems;
+import net.zjjohn121110.aethersdelight.registry.ADItems;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 
 import javax.annotation.Nullable;
@@ -240,7 +240,7 @@ public class RoastMoaBlock extends HorizontalDirectionalBlock {
         int servings = state.getValue(SERVINGS);
 
         if (heldStack.is(Items.BOWL) && servings > 0) {
-                    return takeServing(level, pos, state, player, hand, AethersDelightItems.ROAST_MOA.get());
+                    return takeServing(level, pos, state, player, hand, ADItems.ROAST_MOA.get());
         }
         if (servings == 0) {
             level.playSound(null, pos, SoundEvents.WOOD_BREAK, SoundSource.PLAYERS, 1.0F, 1.0F);

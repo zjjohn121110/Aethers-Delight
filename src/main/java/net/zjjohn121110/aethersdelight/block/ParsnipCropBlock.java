@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightItems;
+import net.zjjohn121110.aethersdelight.registry.ADItems;
 
 public class ParsnipCropBlock extends CropBlock {
     public static final int MAX_AGE = 4;
@@ -18,7 +18,7 @@ public class ParsnipCropBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return AethersDelightItems.PARSNIP.get();
+        return ADItems.PARSNIP.get();
     }
 
     @Override

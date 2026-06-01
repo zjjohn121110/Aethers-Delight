@@ -26,7 +26,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightBlocks;
+import net.zjjohn121110.aethersdelight.registry.ADBlocks;
 
 import javax.annotation.Nullable;
 
@@ -57,7 +57,7 @@ public class PeppermintBushBlock extends AetherBushBlock {
         if (AetherConfig.SERVER.berry_bush_consistency.get()) {
             Block.dropResources(state, level, pos, null, player, ItemStack.EMPTY);
             level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.getRandom().nextFloat() * 0.4F);
-            level.setBlock(pos, AethersDelightBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)), 1 | 2);
+            level.setBlock(pos, ADBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)), 1 | 2);
             level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, state));
             return InteractionResult.sidedSuccess(level.isClientSide());
         } else {
@@ -69,7 +69,7 @@ public class PeppermintBushBlock extends AetherBushBlock {
     public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack tool) {
         super.playerDestroy(level, player, pos, state, blockEntity, tool);
         if (tool.getEnchantmentLevel(level.holderOrThrow(Enchantments.SILK_TOUCH)) <= 0) {
-            level.setBlock(pos, AethersDelightBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)), 1 | 2);
+            level.setBlock(pos, ADBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)), 1 | 2);
             if (AetherConfig.SERVER.berry_bush_consistency.get()) { // Destroy stem too if config is enabled.
                 level.destroyBlock(pos, true, player);
             }
@@ -79,7 +79,7 @@ public class PeppermintBushBlock extends AetherBushBlock {
     @Override
     public void onBlockExploded(BlockState state, Level level, BlockPos pos, Explosion explosion) {
         super.onBlockExploded(state, level, pos, explosion);
-        level.setBlock(pos, AethersDelightBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)), 1 | 2);
+        level.setBlock(pos, ADBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)), 1 | 2);
         if (AetherConfig.SERVER.berry_bush_consistency.get()) { // Destroy stem too if config is enabled.
             level.destroyBlock(pos, true);
         }

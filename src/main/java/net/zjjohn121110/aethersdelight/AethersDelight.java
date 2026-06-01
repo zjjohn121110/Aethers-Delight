@@ -1,8 +1,8 @@
 package net.zjjohn121110.aethersdelight;
 
-import net.zjjohn121110.aethersdelight.registry.AethersDelightBlocks;
-import net.zjjohn121110.aethersdelight.block.entity.AethersDelightBlockEntity;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightItems;
+import net.zjjohn121110.aethersdelight.registry.ADBlocks;
+import net.zjjohn121110.aethersdelight.registry.ADBlockEntities;
+import net.zjjohn121110.aethersdelight.registry.ADItems;
 import net.zjjohn121110.aethersdelight.loot.AethersDelightLootModifier;
 import org.slf4j.Logger;
 
@@ -37,9 +37,9 @@ public class AethersDelight
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        AethersDelightItems.register(modEventBus);
-        AethersDelightBlocks.register(modEventBus);
-        AethersDelightBlockEntity.TILES.register(modEventBus);
+        ADItems.register(modEventBus);
+        ADBlocks.register(modEventBus);
+        ADBlockEntities.TILES.register(modEventBus);
 
         AethersDelightLootModifier.LOOT_MODIFIERS.register(modEventBus);
 

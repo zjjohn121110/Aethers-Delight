@@ -11,13 +11,13 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.zjjohn121110.aethersdelight.AethersDelight;
-import net.zjjohn121110.aethersdelight.datagen.generators.ADBlockTagGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.tag.ADBlockTagGenerator;
 import net.zjjohn121110.aethersdelight.datagen.generators.ADDatapackGenerator;
-import net.zjjohn121110.aethersdelight.datagen.generators.ADItemTagGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.tag.ADItemTagGenerator;
 import net.zjjohn121110.aethersdelight.datagen.generators.ADRecipeGenerator;
-import net.zjjohn121110.aethersdelight.datagen.providers.ADBlockStateProvider;
-import net.zjjohn121110.aethersdelight.datagen.providers.ADItemModelProvider;
-import net.zjjohn121110.aethersdelight.datagen.providers.loot.ADBlockLoot;
+import net.zjjohn121110.aethersdelight.datagen.generators.model.ADBlockStateGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.model.ADItemModelGenerator;
+import net.zjjohn121110.aethersdelight.datagen.generators.loot.ADBlockLoot;
 
 import java.util.Collections;
 import java.util.List;
@@ -38,8 +38,8 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ADBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
 
-        generator.addProvider(event.includeClient(), new ADBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new ADItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ADBlockStateGenerator(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ADItemModelGenerator(packOutput, existingFileHelper));
 
         BlockTagsProvider blockTagsProvider = new ADBlockTagGenerator(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);

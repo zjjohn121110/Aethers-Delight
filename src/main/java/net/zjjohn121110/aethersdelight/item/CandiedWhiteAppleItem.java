@@ -11,11 +11,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightFoods;
+import net.zjjohn121110.aethersdelight.registry.ADFoods;
 
 public class CandiedWhiteAppleItem extends Item {
     public CandiedWhiteAppleItem(Properties pProperties) {
-        super(new Properties().food(AethersDelightFoods.CANDIED_WHITE_APPLE));
+        super(new Properties().food(ADFoods.CANDIED_WHITE_APPLE));
     }
 
     @Override

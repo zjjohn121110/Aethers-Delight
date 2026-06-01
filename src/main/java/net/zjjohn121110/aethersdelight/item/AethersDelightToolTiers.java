@@ -5,15 +5,13 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.SimpleTier;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightItems;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightTags;
+import net.zjjohn121110.aethersdelight.registry.ADItems;
 
 import java.util.function.Supplier;
 
 public class AethersDelightToolTiers implements Tier {
     public static final AethersDelightToolTiers ARKENIUM = new AethersDelightToolTiers(BlockTags.INCORRECT_FOR_IRON_TOOL,
-            750, 5.0f, 2.5f, 11, () -> Ingredient.of(AethersDelightItems.ARKENIUM_INGOT.get()));
+            750, 5.0f, 2.5f, 11, () -> Ingredient.of(ADItems.ARKENIUM_INGOT.get()));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int maxUses;

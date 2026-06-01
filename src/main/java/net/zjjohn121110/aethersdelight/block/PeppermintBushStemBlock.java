@@ -20,7 +20,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.common.CommonHooks;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightBlocks;
+import net.zjjohn121110.aethersdelight.registry.ADBlocks;
 
 public class PeppermintBushStemBlock extends AetherBushBlock implements BonemealableBlock {
     protected static final VoxelShape SHAPE = Block.box(2.0, 0.0, 2.0, 14.0, 13.0, 14.0);
@@ -47,7 +47,7 @@ public class PeppermintBushStemBlock extends AetherBushBlock implements Bonemeal
     @Override
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (level.getRawBrightness(pos.above(), 0) >= 9 && CommonHooks.canCropGrow(level, pos, state, random.nextInt(60) == 0)) {
-            level.setBlockAndUpdate(pos, AethersDelightBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)));
+            level.setBlockAndUpdate(pos, ADBlocks.PEPPERMINT_BUSH_STEM.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)));
             CommonHooks.fireCropGrowPost(level, pos, state);
         }
     }
@@ -59,7 +59,7 @@ public class PeppermintBushStemBlock extends AetherBushBlock implements Bonemeal
 
     @Override
     public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
-        level.setBlockAndUpdate(pos, AethersDelightBlocks.PEPPERMINT_BUSH.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)));
+        level.setBlockAndUpdate(pos, ADBlocks.PEPPERMINT_BUSH.get().defaultBlockState().setValue(AetherBlockStateProperties.DOUBLE_DROPS, state.getValue(AetherBlockStateProperties.DOUBLE_DROPS)));
     }
 
     @Override

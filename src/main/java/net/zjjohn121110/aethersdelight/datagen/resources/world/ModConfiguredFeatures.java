@@ -17,7 +17,7 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.zjjohn121110.aethersdelight.AethersDelight;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightBlocks;
+import net.zjjohn121110.aethersdelight.registry.ADBlocks;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> AETHER_ARKENIUM_ORE_KEY = registerKey("arkenium_ore");
@@ -30,23 +30,23 @@ public class ModConfiguredFeatures {
         RuleTest holystonereplaceable = new TagMatchTest(AetherTags.Blocks.HOLYSTONE);
 
         register(context, AETHER_ARKENIUM_ORE_KEY, Feature.ORE, new OreConfiguration(holystonereplaceable,
-                AethersDelightBlocks.ARKENIUM_ORE.get().defaultBlockState(), 7));
+                ADBlocks.ARKENIUM_ORE.get().defaultBlockState(), 7));
 
         register(context, AETHER_WILD_GINGER_KEY, Feature.NO_BONEMEAL_FLOWER, new RandomPatchConfiguration(
                 64, 5, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, //24
-                new SimpleBlockConfiguration(BlockStateProvider.simple(AethersDelightBlocks.WILD_GINGER.get().defaultBlockState())))));
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ADBlocks.WILD_GINGER.get().defaultBlockState())))));
 
         register(context, AETHER_WILD_PARSNIP_KEY, Feature.NO_BONEMEAL_FLOWER, new RandomPatchConfiguration(
                 64, 5, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, //24
-                new SimpleBlockConfiguration(BlockStateProvider.simple(AethersDelightBlocks.WILD_PARSNIP.get().defaultBlockState())))));
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ADBlocks.WILD_PARSNIP.get().defaultBlockState())))));
 
         register(context, AETHER_WILD_LEEK_KEY, Feature.NO_BONEMEAL_FLOWER, new RandomPatchConfiguration(
                 64, 5, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, //24
-                new SimpleBlockConfiguration(BlockStateProvider.simple(AethersDelightBlocks.WILD_LEEK.get().defaultBlockState())))));
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ADBlocks.WILD_LEEK.get().defaultBlockState())))));
 
         register(context, AETHER_PEPPERMINT_BUSH_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(
                 72, 7, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, //28
-                new SimpleBlockConfiguration(BlockStateProvider.simple(AethersDelightBlocks.PEPPERMINT_BUSH.get().defaultBlockState()
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ADBlocks.PEPPERMINT_BUSH.get().defaultBlockState()
                         .setValue(AetherBlockStateProperties.DOUBLE_DROPS, true))))));
     }
 

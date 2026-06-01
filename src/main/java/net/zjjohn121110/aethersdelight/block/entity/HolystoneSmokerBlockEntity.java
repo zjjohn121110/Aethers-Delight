@@ -9,10 +9,11 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.zjjohn121110.aethersdelight.AethersDelight;
+import net.zjjohn121110.aethersdelight.registry.ADBlockEntities;
 
 public class HolystoneSmokerBlockEntity extends AbstractFurnaceBlockEntity {
     public HolystoneSmokerBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(AethersDelightBlockEntity.HOLYSTONE_SMOKER.get(), pPos, pBlockState, RecipeType.SMOKING);
+        super(ADBlockEntities.HOLYSTONE_SMOKER.get(), pPos, pBlockState, RecipeType.SMOKING);
     }
 
     @Override

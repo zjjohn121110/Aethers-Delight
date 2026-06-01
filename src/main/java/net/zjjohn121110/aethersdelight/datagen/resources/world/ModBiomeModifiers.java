@@ -11,7 +11,7 @@ import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.zjjohn121110.aethersdelight.AethersDelight;
-import net.zjjohn121110.aethersdelight.registry.AethersDelightTags;
+import net.zjjohn121110.aethersdelight.registry.ADTags;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_ARKENIUM_ORE = registerKey("add_arkenium_ore");
@@ -30,22 +30,22 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_WILD_GINGER, new BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(AethersDelightTags.Biomes.WILD_GINGER_BIOMES),
+                biomes.getOrThrow(ADTags.Biomes.WILD_GINGER_BIOMES),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.WILD_GINGER_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_WILD_PARSNIP, new BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(AethersDelightTags.Biomes.WILD_PARSNIP_BIOMES),
+                biomes.getOrThrow(ADTags.Biomes.WILD_PARSNIP_BIOMES),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.WILD_PARSNIP_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_WILD_LEEK, new BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(AethersDelightTags.Biomes.WILD_LEEK_BIOMES),
+                biomes.getOrThrow(ADTags.Biomes.WILD_LEEK_BIOMES),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.WILD_LEEK_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_PEPPERMINT_BUSH, new BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(AethersDelightTags.Biomes.PEPPERMINT_BUSH_BIOMES),
+                biomes.getOrThrow(ADTags.Biomes.PEPPERMINT_BUSH_BIOMES),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PEPPERMINT_BUSH_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
