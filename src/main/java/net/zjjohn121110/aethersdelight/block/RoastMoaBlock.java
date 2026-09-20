@@ -247,7 +247,7 @@ public class RoastMoaBlock extends HorizontalDirectionalBlock {
             level.destroyBlock(pos, true);
         }
         else {
-            player.displayClientMessage(TextUtils.getTranslation("block.feast.use_container", new ItemStack(Items.BOWL).getHoverName()), true);
+            player.displayClientMessage(TextUtils.block("feast.use_container", new ItemStack(Items.BOWL).getHoverName()), true);
         }
 
         return ItemInteractionResult.SUCCESS;
